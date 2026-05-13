@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_105",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "P a g e  13 / 21 \n \n5.3.4. Settlement Justification \nThe team decided to settle with the Pre-trained Piper (ONNX medium) model \nwithout further fine-tuning. The justification is based on the following: \n\u2022 Minimal System Gain: Fine-tuning weights for TTS primarily improves \n\"voice naturalness\" and specific accents, which are secondary to the \nprimary goal of navigation safety. \n\u2022 Resource Allocation: Since the Object Detection and Depth modules are",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_106",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "more computationally expensive, the lightweight nature of the pre-trained \nPiper allows for more CPU/GPU overhead to be dedicated to the perception \npipeline. \n\u2022 Reliability: Pre-trained weights provided 100% speech intelligibility for the \ncommand set during human evaluation trials. \n \n6. Model Training and Hyperparameter Tuning \n6.1. Object Detection \n6.1.1. Rationale for Fine-Tuning \nFine-tuning (transfer learning from COCO pretrained weights) was necessary for the",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_107",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "following concrete reasons: \n\u2022 Class mismatch: YOLO11s pretrained weights support exactly 80 COCO \nclasses. The project requires only 11 specific indoor classes, five of which \n(Wardrobe, Cabinet, Lamp, Potted Plant, Bed) have no direct COCO \nequivalent or are represented differently. \n\u2022 Domain shift: COCO contains substantial outdoor imagery (vehicles, \nanimals, street scenes). Fine-tuning on the DSAI-Unified dataset reorients",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_108",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "the model's feature distribution towards indoor environments, improving \nprecision on indoor-specific textures such as low-contrast furniture and \ndomestic lighting. \n\u2022 Baseline experiment confirmed the need: A preliminary HomeObject-3k-\nonly run showed the model failing entirely on Refrigerator and Door due to \ntheir absence in the pretrained head, achieving mAP@50 of only 0.6942 on \n12 classes but with zero detections for missing categories.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_109",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "\u2022 Performance target: The navigation system requires a recall of \n\uf0b30.60 for \nsafety-critical classes. Pretrained COCO weights alone do not achieve this \non the custom taxonomy without fine-tuning. \n \n6.1.2. Training Strategy \nTraining was conducted in three sequential stages to efficiently allocate compute \nresources while maximising final model quality. \nStage Purpose Dataset Size Models Trained Epochs \nStage 1 \u2014 Version \nSelection Identify best YOLO generation 9,358 (full) 8 models 50 each",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_13_110",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 13,
+            "page_label": "14"
+        },
+        "page_content": "Stage 2 \u2014 HP Tuning Tune hyperparameters for YOLO11s 3,000 (subset) 60 models 80 each \nStage 3 \u2014 Final Training Full-data training with optimal HPs 9,358 (full) 1 model 80",
+        "type": "Document"
+    }
+]

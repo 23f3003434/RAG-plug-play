@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_120",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "P a g e  16 / 21 \n \nThree observations are notable from the training curves. First, all loss metrics \nexhibit a smooth, monotonically decreasing trend across both the training and \nvalidation sets, confirming that the 80-epoch budget and chosen hyperparameters \nyield stable convergence. Second, the validation curves closely track the training \ncurves without diverging \u2014 the data augmentation strategy (Mosaic, Mixup, Scaling,",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_121",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "Flip-LR) successfully prevents overfitting on the 9,358-image training corpus. Third, \nthe mAP50 and Precision curves stabilize after approximately epoch 65, with the \nmodel transitioning from coarse class discrimination to fine-grained \n  \nbounding-box localization \u2014 this is evidenced by the continued improvement in \nmAP@50-95 even after mAP@50 plateaus. \n \n6.2. Depth Estimation Module \nNo additional training or fine-tuning was performed for the depth estimation \nmodule.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_122",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "module. \nThis decision was based on the observation that depth estimation is a dense \nprediction task requiring large-scale data and high computational resources. The \npretrained Depth Anything V2 model already provides strong generalization for \nindoor scenes. \nSystem-level improvements were instead achieved through better integration, \ndecision logic, and depth-based hazard modeling, rather than modifying model \nweights.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_123",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "weights. \nWe justify the decision to use a pretrained depth estimation model without further \nfine-tuning based on quantitative evaluation and application-specific requirements. \n \n1. The model achieves \u03b41 \u2248 0.909 within the 0 to 3 meter range, which is the \ncritical operating region for navigation. This exceeds our predefined \nthreshold of 0.85 for acceptable depth accuracy in obstacle avoidance \ntasks. \n2. The primary objective of the system is not absolute depth precision, but",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_124",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "reliable obstacle detection and safe navigation decisions. Our experiments \nshow that the model consistently produces stable and usable depth maps \nfor navigation in standard indoor environments. \n3. Failure cases observed (reflection, motion, low light) are primarily due to \ninherent limitations of monocular depth estimation rather than insufficient \ntraining. These issues are unlikely to be resolved through simple fine-tuning \non limited data.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_16_125",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 16,
+            "page_label": "17"
+        },
+        "page_content": "on limited data. \n4. Pretrained Depth-Anything V2 has already been trained on large-scale \ndatasets and fine-tuned on Hypersim, which closely matches our indoor \ndeployment setting. This provides strong generalization without additional \ntraining. \n \nFinally, we observed that system-level performance improvements were more \neffectively achieved through: \n\u2022 temporal smoothing (EMA) \n\u2022 decision logic refinement \nrather than modifying the model weights.",
+        "type": "Document"
+    }
+]

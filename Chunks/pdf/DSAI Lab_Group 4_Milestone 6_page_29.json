@@ -1,0 +1,34 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_29_178",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 29,
+            "page_label": "30"
+        },
+        "page_content": "P a g e  29 / 21 \n \nThe navigation module generates directional commands based on spatial risk \ndistribution across the scene. \nThe command distribution reveals that: \n\u2022 \u201cPath blocked. Scan around.\u201d is the most frequent output (25 cases), \nindicating cautious behavior in cluttered environments. \n\u2022 Directional corrections such as \u201cTurn left\u201d (14) and \u201cTurn right\u201d (11) are \ncommonly issued. \n\u2022 Fine adjustments (\u201cmove slightly left/right\u201d) are used in intermediate \nscenarios.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_29_179",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 29,
+            "page_label": "30"
+        },
+        "page_content": "scenarios. \nOnly a single instance of \u201cGo straight\u201d was observed, reflecting the conservative \nnature of the updated hazard thresholds. \nAll 60 TTS outputs were successfully generated, with zero failures, demonstrating \nreliable end-to-end integration. \n \n7.4.5. Latency & Real-time Performance \n \nFigure 7.4.5.1 : Per-image latency breakdown across pipeline modules. Depth estimation \ndominates computational cost, while navigation and hazard scanning introduce negligible \noverhead.",
+        "type": "Document"
+    }
+]

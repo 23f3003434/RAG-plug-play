@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_30_180",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 30,
+            "page_label": "31"
+        },
+        "page_content": "P a g e  30 / 21 \n \nThe updated system shows a significant improvement in real-time performance. \nThe total pipeline latency averages approximately 128 ms per frame, \ncorresponding to an effective throughput of around 7\u20138 FPS. This represents a \nmajor improvement over earlier versions of the system. \nModule-wise observations: \n\u2022 Depth estimation (~92 ms) remains the dominant computational cost \n\u2022 YOLO (~26 ms) operates efficiently",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_30_181",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 30,
+            "page_label": "31"
+        },
+        "page_content": "\u2022 YOLO (~26 ms) operates efficiently \n\u2022 Hazard scanning (~9 ms) and navigation (~0.02 ms) are negligible \n\u2022 TTS latency (~0.003 ms) is effectively eliminated due to caching and \noptimization \nThese results indicate that the system is now capable of near real-time \nperformance and is suitable for deployment on edge devices with moderate \ncomputational resources. \n \n7.4.6. System-level Observations & Limitations \nThe end-to-end evaluation highlights several key system behaviors:",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_30_182",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 30,
+            "page_label": "31"
+        },
+        "page_content": "\u2022 The integration of depth-based hazard modeling significantly improves \nrobustness, reducing dependence on object detection alone. \n\u2022 The system exhibits conservative navigation behavior, prioritizing safety \nover aggressive movement. \n\u2022 Despite high numerical depth errors, relative depth ordering remains \nsufficient for obstacle avoidance. \n \nHowever, certain limitations persist: \n\u2022 Object detection recall remains relatively low, leading to missed object \nclassifications.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_30_183",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 30,
+            "page_label": "31"
+        },
+        "page_content": "classifications. \n\u2022 Absolute depth estimation is unreliable due to scale ambiguity. \n\u2022 The system tends to over-predict hazards, resulting in cautious navigation \ndecisions. \n \n7.4.7. Key Takeaway \nThe full system demonstrates that effective indoor navigation can be achieved \nthrough a combination of approximate perception and robust decision logic. By \nprioritizing safety through conservative hazard thresholds and leveraging relative",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_30_184",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 30,
+            "page_label": "31"
+        },
+        "page_content": "depth information, the system maintains reliable performance even under \nimperfect detection and depth estimation. \nThis reinforces the principle that, for assistive navigation systems, consistent \nspatial reasoning and risk awareness are more critical than precise metric \naccuracy.",
+        "type": "Document"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_5_65",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "P a g e  5 / 21 \n \n4.1. Object Detection Datasets & Processing \nOur team concentrated exclusively on 11 core classes typical to indoor navigation: \nperson, chair, table, sofa, bed, wardrobe, door, potted plant, lamp, refrigerator, \nand cabinet. \n\u2022 COCO Dataset Subsets: \no Core Extraction Data: Python pipelines iteratively combed through \nthe standard COCO annotations to extract basic household hazards. \no Class Augmentation: Upon discovering a severe class mismatch that",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_5_66",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "underrepresented large indoor appliances and furniture, individual \nsub-teams utilized specific automated extraction notebooks (coco-\nbed.ipynb and coco-refregerator.ipynb) to mine, validate, and \nstandardize heavy obstacles like beds and refrigerators to patch the \ndataset imbalance. \n\u2022 HomeObjects-3K: \no Adding further generalization and bounding box refinement, \nHomeObjects-3K samples were normalized into the YOLO directory \nconstraints to buffer standalone datasets.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_5_67",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "Dataset Name HomeObject-3k DSAI-Unified DSAI-Uni-3Cls \nTrain Samples 2285 9358 9358 \nTest Samples 404 2340 2340 \n# of Classes 12 11 3 \n# of Models \nTrained 3 9 2 \nBest Model YOLO11n YOLO11s YOLOv8n \nLink to Dataset HomeObjects-3K DSAI Unified DSAI Unified \n \n \nFinal Unified Dataset Advantages: \nBy merging the datasets, the final curated class distribution proved remarkably \nstable for YOLO11s training: \n\u2022 Person: 4,174 instances \n\u2022 Table: 2,920 instances \n\u2022 Refrigerator: 2,417 instances",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_5_68",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "\u2022 Refrigerator: 2,417 instances \n\u2022 Potted Plant: 2,180 instances",
+        "type": "Document"
+    }
+]

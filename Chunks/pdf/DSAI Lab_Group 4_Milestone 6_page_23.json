@@ -1,0 +1,50 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_23_152",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 23,
+            "page_label": "24"
+        },
+        "page_content": "P a g e  23 / 21 \n \n\u03b42,\u03b43 Relaxed accuracy thresholds Measure robustness \n \nThis combination of metrics ensures that both numerical accuracy and structural \ncorrectness of depth predictions are evaluated. \n \n7.2.3. Evaluation Methodology \nTo better understand model behaviour, multiple interference strategies were \ntested: \nTechnique Description \nDirect Inference Raw model output without correction \nScale-Shift Alignment Least-squares alignment using ground truth",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_23_153",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 23,
+            "page_label": "24"
+        },
+        "page_content": "Median Scaling Median-based scale correction \nMulti-scale TTA Test-time augmentation with scaling and flipping \n \nFor each method, predictions were resized to match ground truth resolution \nbefore computing metrics. All evaluations were performed within a valid depth \nrange to exclude invalid pixels. \n \n7.2.4. Quantitative Results & Key Observations \n \nKey observations: \n\u2022 Direct inference produces moderate performance, with AbsRel around 0.21",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_23_154",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 23,
+            "page_label": "24"
+        },
+        "page_content": "and \u03b41 accuracy around 0.68. This indicates that the model captures scene \nstructure reasonably well, but suffers from scale inconsistency. \n\u2022 Applying scale-shift alignment significantly improves performance across \nall metrics. AbsRel reduces to approximately 0.09 and \u03b41 increases to \nabove 0.90. Median scaling produces similar improvements, indicating that \nsimple scaling corrections are effective.",
+        "type": "Document"
+    }
+]

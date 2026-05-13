@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_7_29",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "P a g e  7 / 9  \n \n3.3. Depth Preprocessing & Standardization Pipeline \nWe have implemented the following preprocessing procedures: \n\u2022 Missing Value Handling (Inpainting): Raw depth maps from sensors often \ncontain \"black holes\" (missing values) due to reflective surfaces or occlusion. \nWe apply bilateral filtering and interpolation to fill these gaps before passing \ndata to the navigation logic. \n\u2022 Unit Standardization: All depth outputs are converted to a unified metric",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_7_30",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "scale (meters). For models that provide relative depth (inverse depth), we \napply a linear transformation based on known camera focal length to \napproximate metric distance. \n\u2022 RGB-Depth Alignment: Since the YOLOv8 detections (RGB) and Depth \nAnything predictions (Depth) must overlap perfectly, we use a joint-resizing \nstrategy. Both inputs are transformed to 640 \u00d7 640 using the same \ntransformation matrix to ensure that a bounding box at [\ud835\udc65, \ud835\udc66] on the RGB",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_7_31",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "frame corresponds exactly to the depth value at [\ud835\udc65, \ud835\udc66]. \n\u2022 Normalization: Depth values are normalized to a range of [0,1] during the \ninternal risk calculation to ensure the EMA (Exponential Moving Average) in \nour logic remains stable regardless of sensor noise. \n \n3.4. Summary of Dataset Preparedness \nBy selecting NYU-Depth V2 and the Depth Anything V2 architecture, the team has \nreduced the computational overhead while maintaining high precision for close-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_7_32",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "range indoor obstacles. This standardized pipeline directly feeds into the \nNavigationDeterministicLogic verified in Milestone 3. \n \n4. Speech Synthesis Identification & Interaction Design \n4.1. Role of Speech Synthesis in Action-Oriented Navigation \nUnlike standard navigation apps that provide occasional turn-by-turn directions, this \nsystem requires High-Frequency, Low-Latency feedback. The speech module is \nthe primary interface between the spatial logic and the user.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_7_33",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "\u2022 Necessity: High-quality speech datasets (like LJSpeech and LibriTTS) are \nrequired to ensure that the synthesized voice remains intelligible even in \nnoisy outdoor environments or when the user is moving quickly. \n\u2022 Functional Goal: To provide instructions in under 200ms from the moment \nan obstacle is detected, ensuring the user has time to react.",
+        "type": "Document"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_3_12",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "P a g e  3 / 9  \n \nStep 2: Annotation Standardization \nAll source annotations (originally in COCO JSON or XML formats) were \nprogrammatically converted to the YOLO PyTorch format: \n\u2022 Format: < class_id >< x_center >< y_center >< width >< height > \n(normalized to 0-1). \n\u2022 Verification: A validation check was run to ensure no bounding boxes \nexceeded image boundaries during conversion. \n \nStep 3: Image Standardization \nTo maintain consistency during the stochastic gradient descent process:",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_3_13",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "\u2022 Resolution: All images are resized to \ud835\udfd4\ud835\udfd2\ud835\udfce \u00d7 \ud835\udfd4\ud835\udfd2\ud835\udfce pixels. \n\u2022 Normalization: Pixel values are scaled to the [0,1] range. \n \n2.4. Preliminary Experiments: HomeObject-3k Baseline \nBefore finalizing the unified dataset, we conducted a baseline study using only the \nHomeObject-3k dataset to measure initial performance. \n\u2022 Observation: The model achieved high precision for \"Chair\" and \"Sofa\" but \nfailed entirely on \"Refrigerator\" and \"Door\" due to their absence in the original \nsource.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_3_14",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "source. \n\u2022 Conclusion: This experiment justified the need for the DSAI-Unified-\nDataset to provide the linguistic and visual variety required for Milestone 3. \nDataset HomeObject-3k HomeObject-3k HomeObject-3k \nModel Name YOLOv11n YOLOv11n YOLOv10n \nTrain Data Count 2285 2285 2285 \nTest Data Count 404 404 404 \nClasses 11 11 11 \nEpochs 25 100 100 \nAugmentation FALSE TRUE TRUE \nConfidence 0.25 0.25 0.25 \nmAP@50-95 0.4902 0.4804 0.467 \nmAP@50 0.6942 0.6996 0.6729 \nPrecision 0.6872 0.6639 0.7124",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_3_15",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "Precision 0.6872 0.6639 0.7124 \nRecall 0.6553 0.686 0.6264 \nF1-Score 0.6709 0.6748 0.6666",
+        "type": "Document"
+    }
+]

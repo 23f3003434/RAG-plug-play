@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_26_165",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 26,
+            "page_label": "27"
+        },
+        "page_content": "P a g e  26 / 21 \n \n\u2022 Latency Measurement: We recorded the \"Time to First Syllable\"\u2014the \ninterval from the moment the Navigation Logic sends a string to the \nmoment the audio buffer begins playback. \n\u2022 Real-Time Factor (RTF) Calculation: Defined as the ratio of Synthesis Time \nto Audio Duration. An RTF < 1.0 indicates the system is generating speech \nfaster than it is spoken. \n \n7.3.3. Quantitative Performance Metrics \nThe standalone benchmarking was conducted across 165 samples from four",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_26_166",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 26,
+            "page_label": "27"
+        },
+        "page_content": "diverse datasets to ensure the engine's robustness beyond simple navigation \nphrases. \nDataset Sample Count Avg. Latency(ms) Avg. RTF Status \nNavigation Dataset 12 34.2 ms 0.08 PASS \nCMU Arctic 50 48.6 ms 0.12 PASS \nLJ Speech 50 62.1 ms 015 PASS \nLibriSpeech 53 67.8 ms 0.16 PASS \n \nKey Findings: \n\u2022 Near-Instantaneous Response: For the critical Navigation Dataset, the \nlatency averaged 34.2ms, significantly outperforming our safety threshold \nof < 200ms.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_26_167",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 26,
+            "page_label": "27"
+        },
+        "page_content": "of < 200ms. \n\u2022 Extreme Efficiency: An RTF of 0.08 means the system can synthesize an \nentire navigation command in less than 1/10th of the time it takes to speak \nit. \n\u2022 Async Advantage: When integrated into the pipeline using asynchronous \nexecution, the effective \"blocking overhead\" to the main loop was reduced \nto < 0.02ms, ensuring the TTS does not slow down the Object Detection or \nDepth frames. \n \n7.3.4. Qualitative Evaluation",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_26_168",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 26,
+            "page_label": "27"
+        },
+        "page_content": "7.3.4. Qualitative Evaluation \nA human-in-the-loop evaluation was conducted to assess the clarity of the \nsynthesized commands in a \"single-listen\" scenario: \n\u2022 Intelligibility Score: 100%. All participants correctly identified the \ncommand on the first attempt. \n\u2022 Pronunciation Accuracy: The eSpeak-NG backend successfully handled \nall navigational units. For example, the string \"0.5m\" was correctly \nexpanded and spoken as \"zero point five meters,\" eliminating any user \nambiguity.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_26_169",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 26,
+            "page_label": "27"
+        },
+        "page_content": "ambiguity. \n\u2022 Consistency: Unlike LLM-based speech solutions, the deterministic Piper \noutput showed zero phonetic distortion or \"hallucinations\" in pronunciation \nacross 100+ trials.",
+        "type": "Document"
+    }
+]

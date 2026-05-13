@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_24_155",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 24,
+            "page_label": "25"
+        },
+        "page_content": "P a g e  24 / 21 \n \n\u2022 Multi-scale test-time augmentation does not provide consistent gains and \nin some cases degrades performance, suggesting that it is not beneficial for \nthis setup. \nThese results indicate that the model is able to learn accurate relative depth \nrelationships, but struggles with absolute scale estimation. \n \n7.2.5. Effect of Scale Ambiguity \nA key limitation observed is the presence of scale ambiguity in monocular depth \nestimation.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_24_156",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 24,
+            "page_label": "25"
+        },
+        "page_content": "estimation. \nThe significant improvement in performance after applying scale-shift alignment \nand median scaling indicates that most of the prediction error arises from global \nscale mismatch rather than incorrect scene structure. \nHowever, since these alignment techniques rely on ground truth depth, they \ncannot be applied in real-world deployment. \nThis establishes an important distinction: while absolute depth values may be",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_24_157",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 24,
+            "page_label": "25"
+        },
+        "page_content": "inaccurate without alignment, the model still preserves correct relative depth \nordering. \n \n7.2.6. Temporal Stability & Failure Analysis \nTo improve temporal consistency in real-time inference, exponential moving \naverage (EMA) smoothing was applied to depth predictions. This technique \nreduces frame-to-frame fluctuations by averaging predictions over time, thereby \nstabilizing the depth map in dynamic scenes. \nThe impact of EMA smoothing was evaluated qualitatively across multiple real-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_24_158",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 24,
+            "page_label": "25"
+        },
+        "page_content": "world scenarios, including reflective surfaces, motion, low-light conditions, and \ncluttered environments. Representative results are shown below.",
+        "type": "Document"
+    }
+]

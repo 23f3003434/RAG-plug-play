@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_49",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "P a g e  2 / 21 \n \n2. Vision-Based Systems: \n\u2022 Object Identification Apps: Tools like \"Seeing AI\" or \"TapTapSee\" use \nsmartphone cameras to identify objects. However, they are often \ncloud-dependent, introducing significant latency that makes them \nunusable for real-time navigation. \n\u2022 Lidar and Stereo Cameras: High-end wearables use depth-sensing \nhardware to map environments. While effective, these devices are \noften heavy, expensive, and visually stigmatizing for the user.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_50",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "2.2. Identified Gaps \nThrough our literature review in Milestone 1 and initial testing in Milestone 3, we \nidentified three critical gaps: \n\u2022 The Latency Bottleneck: Many systems involve a 500ms+ delay between \ndetection and feedback. In a walking scenario, a 200ms delay can be the \ndifference between stopping safely and hitting an obstacle. \n\u2022 Infrastructure Dependency: Most high-precision systems require the \nenvironment to be \"prepared\" with tags or beacons, limiting the user's",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_51",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "freedom to navigate new spaces. \n\u2022 Logic Hallucination: Recent attempts to use Large Language Models (LLMs) \nfor navigation instructions, while natural-sounding, introduce the risk of \n\"hallucinations\"\u2014where the model suggests a path that contradicts the raw \nsensor data. \n2.3. Our Proposed Solution: The Deterministic Pipeline \nOur project bridges these gaps by implementing a local, smartphone-based \npipeline that requires no external infrastructure.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_52",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "\u2022 Action-Oriented Logic: Instead of just naming objects, our system uses a \nRule-Based Risk Assessment Module. By calculating the overlap between \ndetected objects and a predefined \"Walking Zone,\" it translates complex \nvisual data into simple, life-saving commands like \"Stop\" or \"Move Left.\" \n\u2022 Offline Efficiency: By utilizing quantized models (YOLO11s and Depth-\nAnything-V2-Metric-Hypersim-VITS), we ensure the system runs locally on-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_53",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "device, preserving user privacy and eliminating internet-related latency. \n \n3. The Project Architecture \nThe architecture of our active blind navigation assistance system is designed as a low-\nlatency, dual-stream sensor fusion pipeline. Built for edge-device deployment, it \ncompletely avoids reliance on cloud computation APIs to ensure user privacy, continuous \navailability, and near-zero latency. \n \nThe system continuously captures raw visual feeds, interprets them simultaneously",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_2_54",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "through semantic (object detection) and geometric (depth estimation) neural pathways, \nmaps these insights onto spatial \"zones,\" and generates non-intrusive Text-to-Speech (TTS) \ncommands. \n3.1. The Perception Layer (Dual-Stream Setup) \nAt the heart of the system is the Perception Layer, which processes each raw RGB \nframe. To guarantee physical safety, we split perception into two distinct streams: \nSemantic Representation and Geometric Depth Estimation.",
+        "type": "Document"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_4_61",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "P a g e  4 / 21 \n \n3.3. The Decision & Smoothing Engine \nOnce spatial risk scores are assigned to the Left, Center, and Right zones, the \nvariables pass through temporal smoothing to prevent erratic behavior: \n\u2022 Exponential Moving Average (EMA): Applied with an ema_alpha = 0.3 to act \nas a low-pass filter, preventing a single corrupted frame camera-glitch from \ntriggering false alarms. \n\u2022 Hysteresis Loop: If the system is actively commanding the user to \"Turn",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_4_62",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "left,\" it imposes a mathematical bias (turn_hysteresis = 0.5). The alternate \npath must become definitively clear before the engine allows a contradictory \ncommand, ensuring smooth turns. \n\u2022 Event Locks: An internal timer ensures auditory commands stay locked in \nexecution long enough to act on them before the next loop overrides them. \n \n3.4. Execution & Application Layer \n\u2022 Text-to-Speech (TTS) Controller: Commands derived from the logic engine",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_4_63",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "(e.g., \"Path blocked, turn left\") are routed to the Piper TTS engine (en_US-\namy-medium). Using ONNX Runtime, Piper synthesizes the 22.05 kHz WAV \naudio purely in RAM (eliminating disk I/O chokepoints). It operates on an \nAsync Event Queue, consistently generating speech faster than real-time \nplayback (RTF > 0.3). \n\u2022 Performance Diagnostics Pipeline: A diagnostic wrapper tracks \nmicrosecond-accurate lifecycle milestones (YOLO latency, Depth latency,",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_4_64",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "TTS synthesis time) to ensure the system consistently clears real-time \ninference hurdles without dropping frames. \n \n3.5. System Flowchart \n \n \n4. Dataset Collection & Preprocessing \nTo push the YOLO11s model beyond standard general-purpose benchmarks, we \nsynthesized the dsai-unified-dataset by aggregating and filtering public datasets to over-\nrepresent specific, highly dangerous indoor obstacles.",
+        "type": "Document"
+    }
+]

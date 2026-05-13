@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_18_131",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 18,
+            "page_label": "19"
+        },
+        "page_content": "P a g e  18 / 21 \n \n\u2022 Phoneme Silencing: We tuned the silence duration between words to < \n50ms to ensure that multi-word instructions (e.g., \"Stop. Obstacle.\") are \ndelivered as a continuous, urgent flow rather than disjointed words. \n \n6.3.4. Hardware Used for Evaluation \nEvaluation and benchmarking of the TTS engine were performed on a local edge-\nrepresentative environment to ensure the metrics reflected real-world use: \n\u2022 CPU: Intel i5 / Apple M1 (representative of high-end mobile/tablet",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_18_132",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 18,
+            "page_label": "19"
+        },
+        "page_content": "processing). \n\u2022 RAM: 8GB (Total system overhead for TTS remained < 200MB). \n\u2022 Inference Engine: ONNX Runtime with CPU execution provider (ensuring \ncompatibility across devices without dedicated GPUs). \n \n6.3.5. Benchmarking Metrics for Claim Justification \nThe decision to stick with the pre-trained model is supported by the following \nstandalone performance data: \nMetric Pre-trained Performance Safety Requirement Status \nSynthesis Latency 25ms \u2013 68ms < 200ms EXCEEDED",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_18_133",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 18,
+            "page_label": "19"
+        },
+        "page_content": "Speech Intelligibility 100% (Human Eval) > 95% EXCEEDED \nCommand Reliability Zero \"Hallucinations\" 100% EXCEEDED \n \n \n7. Module Evaluations \n7.1. Object Detection Module \n7.1.1. Evaluation Setup \nThe object detection module was evaluated on a fully held-out test split of 1,170 \nimages (10%) from the DSAI-Unified dataset \u2014 images that were never seen during \ntraining or hyperparameter tuning. This ensures unbiased performance reporting",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_18_134",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 18,
+            "page_label": "19"
+        },
+        "page_content": "consistent with best practices in computer vision benchmarking. \nAttribute Details \nHardware NVIDIA Tesla T4 GPU (16 GB VRAM) via Kaggle \nFramework Python 3.12.12, PyTorch 2.10.0+cu128, Ultralytics 8.4.33 \nTest Set Size 1,170 images (10% held-out split) \nImage Size 768 \u00d7 768 px (consistent with training) \nConfidence 0.25 (detection threshold); optimal F1 at 0.333 \nNMS IoU 0.45 \nClasses 11 (Person, Table, Potted Plant, Chair, Sofa, Lamp, Door, Cabinet, Wardrobe, \nRefrigerator, Bed)",
+        "type": "Document"
+    }
+]

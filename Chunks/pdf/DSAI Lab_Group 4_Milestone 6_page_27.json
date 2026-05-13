@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_27_170",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 27,
+            "page_label": "28"
+        },
+        "page_content": "P a g e  27 / 21 \n \n7.3.5. Latency Distribution \nThe following table highlights the latency for the most frequent navigational \ninstructions: \nCommand Synthesis Latency (ms) Audio Duration (s) \n\"Stop\" 25.4 ms 0.62 s \n\"Move left\" 28.9 ms 0.88 s \n\"Obstacle ahead\" 31.2 ms 1.15 s \n\"Two steps forward\" 38.5 ms 1.42 s \n \n7.3.6. Module Conclusion \nThe TTS module is highly optimized for the task. It provides a deterministic, low-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_27_171",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 27,
+            "page_label": "28"
+        },
+        "page_content": "latency, and high-clarity audio interface. The evaluation confirms that the TTS \ncomponent is not a bottleneck in the pipeline and satisfies all requirements for \n\"Action-Oriented\" guidance where reaction time is paramount. \n \n7.4. Full System End-to-End Evaluation \n7.4.1. Evaluation Setup \nThe complete navigation pipeline was evaluated on a held-out subset of 60 indoor \nimages from the SUNRGBD dataset. This evaluation simulates real-world",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_27_172",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 27,
+            "page_label": "28"
+        },
+        "page_content": "deployment conditions, where no ground truth depth is available and all modules \noperate jointly in an end-to-end manner. \nThe system integrates object detection, depth estimation, depth-based hazard \nmodeling, navigation decision logic, and text-to-speech (TTS) generation. \nThe evaluation was conducted using the following configuration: \n\u2022 YOLO confidence threshold : 0.25 \n\u2022 IoU threshold : 0.5 \n\u2022 Hazard thresholds: \no Danger Zone : < 1.8 m \no Warning Zone : 1.8 m - 2.5 m",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_27_173",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 27,
+            "page_label": "28"
+        },
+        "page_content": "o Warning Zone : 1.8 m - 2.5 m \n\u2022 Depth hazard warning: \no Danger : 25.0 \no Warning : 20.0 \n \n7.4.2. Module-wise quantitative performance \nModule Metric Value Interpretation \nYOLO Precision 0.582 Moderate detection reliability \nYOLO Recall 0.384 Some objects still missed \nYOLO F1 0.462 Balanced but detection is bottleneck \nYOLO Mean IoU 0.865 Strong localization accuracy \nDepth AbsRel 0.535 High due to scale ambiguity",
+        "type": "Document"
+    }
+]

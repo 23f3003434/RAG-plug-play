@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_55",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "P a g e  3 / 21 \n \n1. Stream A: Semantic Object Detection \n\u2022 Core Technology: A robust and lightweight Ultralytics YOLO11s \nmodel. To optimize for high-speed edge hardware, the 'Small' (s) \nvariant of YOLO11 was chosen for its ideal balance between inference \nlatency and AP (Average Precision). \n\u2022 Operation: When an RGB frame enters this module, YOLO11s scans \nfor 11 specific indoor navigational hazard classes (e.g., person, table, \nsofa, bed, door, refrigerator, etc.).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_56",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "sofa, bed, door, refrigerator, etc.). \n\u2022 Output: The model outputs a set of bounding boxes with semantic \nclass labels. These parameters contextualize what the obstacle is, \nfeeding the navigational logic with qualitative awareness. \n \n2. Stream B: Geometric Depth Estimation \n\u2022 Operation: Unlike YOLO11s, which only looks for known learned \npatterns, the monocular depth stream maps the absolute geometry of \nthe environment by calculating the proximity of every single pixel to \nthe camera lens.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_57",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "the camera lens. \n\u2022 Output: A dense, continuous depth map where pixel intensities \ncorrelate directly to real-world distances (in meters). This represents \nthe unarguable physical truth of the room. Unrecognized objects or \nirregularly shaped furniture will still register as a physical blockade on \nthis map. \n \n3.2. Navigation Logic & Sensor Fusion Layer \nThis component operates as the deterministic \"brain\" of the application. The frame \nis visually sliced into three operational Spatial Zones:",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_58",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "\u2022 Left Zone: The left 30% of the active frame. \n\u2022 Center Zone: The middle 40% of the active frame (representing the primary \ntrajectory path). \n\u2022 Right Zone: The right 30% of the active frame. \n \nThe Sensor Fusion Principle (How Layers Interact): \nA critical design requirement is how the pipeline handles conflicts between \nYOLO11s and Depth-Anything-V2. Bounding boxes alone are geometrically \nunreliable\u2014for instance, a YOLO bounding box might frame a distant wardrobe with",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_59",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "the same physical screen area as a close-up chair. \n \nTo resolve this safely, the system computes \ud835\udc51\ud835\udc4e\ud835\udc5b\ud835\udc54\ud835\udc52\ud835\udc5f_\ud835\udc5f\ud835\udc4e\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc60 and \ud835\udc64\ud835\udc4e\ud835\udc5f\ud835\udc5b\ud835\udc56\ud835\udc5b\ud835\udc54_\ud835\udc5f\ud835\udc4e\ud835\udc61\ud835\udc56\ud835\udc5c\ud835\udc60 by \nmapping YOLO bounding box intersections over the depth maps layout, but strictly \nprioritizes Depth Estimation. \n\u2022 The Depth hazard danger weight is mathematically forced to a massively \nhigher scaling factor (\ud835\udc51\ud835\udc52\ud835\udc5d\ud835\udc61\u210e_\u210e\ud835\udc4e\ud835\udc67\ud835\udc4e\ud835\udc5f\ud835\udc51_\ud835\udc51\ud835\udc4e\ud835\udc5b\ud835\udc54\ud835\udc52\ud835\udc5f_\ud835\udc64\ud835\udc52\ud835\udc56\ud835\udc54\u210e\ud835\udc61 =  25.0) than default \nobject-detection triggers (\ud835\udc5a\ud835\udc4e\ud835\udc65_\ud835\udc5c\ud835\udc4f\ud835\udc57\ud835\udc52\ud835\udc50\ud835\udc61_\ud835\udc5f\ud835\udc56\ud835\udc60\ud835\udc58 =  8.0).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_3_60",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 3,
+            "page_label": "4"
+        },
+        "page_content": "\u2022 Summary of interaction: YOLO11s provides the semantic subject (\"Chair \ndetected\"), but the Dense Depth Engine acts as the definitive safety veto \nconstraint. Depth determines when the obstacle is dangerous enough to fire \na command.",
+        "type": "Document"
+    }
+]

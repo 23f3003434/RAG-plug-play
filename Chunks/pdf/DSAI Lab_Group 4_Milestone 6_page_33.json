@@ -1,0 +1,34 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_33_195",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 33,
+            "page_label": "34"
+        },
+        "page_content": "P a g e  33 / 21 \n \n\u2022 \"Path blocked. Scan around.\": Issued 25 times. \n\u2022 \"Turn left.\": Issued 14 times. \n\u2022 \"Turn right.\": Issued 11 times. \n\u2022 \"Move slightly right.\": Issued 5 times. \n\u2022 \"Move slightly left.\": Issued 4 times. \n\u2022 \"Go straight.\": Issued 1 time. \n \nAnalysis of Distribution: Because SUN RGB-D frames consistently feature dense, \ncluttered spaces with severe center-path obstacles, the navigation logic \naccurately identified that almost none of the forward routes were clear (yielding",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_33_196",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 33,
+            "page_label": "34"
+        },
+        "page_content": "only 1 positive \"Go straight\" directive). Bouncing between \"Path blocked\" stops \nand sharp turns verifies that the mathematical depth threshold mappings heavily \nprioritize user safety and directly prevent forward collisions. Throughput 0 TTS \nfailures over the 60 simulated calls. \n \n \n8.3.4. Inferences",
+        "type": "Document"
+    }
+]

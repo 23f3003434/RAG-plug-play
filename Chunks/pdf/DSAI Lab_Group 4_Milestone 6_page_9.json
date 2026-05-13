@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_9_85",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 9,
+            "page_label": "10"
+        },
+        "page_content": "P a g e  9 / 21 \n \n5.1. Object Detection Module \nThis section documents the systematic benchmarking of multiple YOLO \narchitectures on the DSAI-Unified dataset, the reasoning behind the final model \nselection, and an overview of the chosen architecture. \n5.1.1. Candidate Models & Benchmarking \nEight YOLO variants spanning four generations were evaluated at 50 epochs \n(except YOLO11s which was also run at 100 epochs) on the full DSAI-Unified",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_9_86",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 9,
+            "page_label": "10"
+        },
+        "page_content": "dataset (9,358 training / 2,340 validation images). All experiments used identical \ndata splits and a confidence threshold of 0.25. \nModel Epochs Augment mAP@50-95 mAP@50 Precision Recall F1 \nYOLOv8n 50 \u2713 0.3743 0.5744 0.6306 0.5411 0.5824 \nYOLO26n 50 \u2713 0.3882 0.5884 0.6460 0.5361 0.5859 \nYOLOv10n 50 \u2717 0.3613 0.5582 0.6313 0.5345 0.5789 \nYOLO11n 50 \u2713 0.3963 0.6062 0.6842 0.5452 0.6068 \nYOLOv10n 50 \u2713 0.3814 0.5755 0.6722 0.5239 0.5889 \nYOLOv8s 50 \u2713 0.4208 0.6271 0.6987 0.5799 0.6295",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_9_87",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 9,
+            "page_label": "10"
+        },
+        "page_content": "YOLOv10s 50 \u2713 0.4267 0.6371 0.6859 0.5817 0.6295 \nYOLOv12n 50 \u2713 0.3986 0.6050 0.6506 0.5760 0.6110 \nYOLO11s 100 \u2713 0.4275 0.6394 0.7014 0.5925 0.6424 \nTable 5.1 \u2014 Full YOLO architecture benchmarking results on DSAI-Unified dataset. Bold row indicates the selected model. \nFigure 5.1 \u2014 mAP@50 and mAP@50-95 comparison across all benchmarked YOLO variants. YOLO11s at 100 epochs \nachieves the highest scores on both metrics. \n \n5.1.2. Final Model Selection \u2014 YOLO11s",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_9_88",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 9,
+            "page_label": "10"
+        },
+        "page_content": "5.1.2. Final Model Selection \u2014 YOLO11s \nYOLO11s (Small variant) was selected as the production model for the following \nconcrete, data-driven reasons:",
+        "type": "Document"
+    }
+]

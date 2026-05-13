@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_19_135",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 19,
+            "page_label": "20"
+        },
+        "page_content": "P a g e  19 / 21 \n \n7.1.2. Quantitative Results \nMetric Value Navigation Interpretation \nmAP@50 0.6579 Strong overall detection capability across all 11 indoor classes \nmAP@50-95 0.4415 Good localization accuracy across multiple IoU thresholds \nPrecision 0.6932 ~69% of detections are true positives \u2014 low false alarm rate \nRecall 0.5977 ~60% of ground-truth objects detected \u2014 primary safety bottleneck \nF1-Score 0.6424 Harmonic mean; best balanced single-point performance metric",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_19_136",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 19,
+            "page_label": "20"
+        },
+        "page_content": "The aggregate mAP@50 of 0.6579 represents a substantial improvement over the \nbest literature baseline for obstacle detection systems of a similar class (Wang et \nal., 2024 reported mAP@50 of 0.19\u20130.29 for small obstacle detection on custom \ndatasets). The precision of 0.69 is particularly important: in the navigation context, \na false positive (detecting an obstacle that is not there) causes an unnecessary \nstop, which is disruptive but safe. A false negative (missing a real obstacle) is",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_19_137",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 19,
+            "page_label": "20"
+        },
+        "page_content": "potentially dangerous. The recall of 0.60 therefore remains the primary metric to \nimprove in future iterations. \n \n7.1.3. Class-wise Performance \nClass Precision Recall mAP@50 mAP@50-95 Safety Priority \nPerson 0.810 0.634 0.739 0.489 CRITICAL \u2014 dynamic hazard \nTable 0.758 0.614 0.708 0.481 High \nPotted Plant 0.737 0.699 0.744 0.417 Medium \nChair 0.733 0.522 0.604 0.411 High \nSofa 0.710 0.793 0.795 0.592 Medium \nLamp 0.651 0.577 0.613 0.371 Medium",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_19_138",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 19,
+            "page_label": "20"
+        },
+        "page_content": "Lamp 0.651 0.577 0.613 0.371 Medium \nDoor 0.556 0.418 0.521 0.349 HIGH \u2014 navigation waypoint \nCabinet 0.745 0.368 0.511 0.278 Medium \nWardrobe 0.470 0.489 0.448 0.290 Low \nRefrigerator 0.711 0.658 0.705 0.505 Medium \nBed 0.744 0.802 0.849 0.674 Low (static large)",
+        "type": "Document"
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_72",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "P a g e  7 / 21 \n \n4.2. Depth Estimation Dataset \nThe depth estimation module was evaluated using both benchmark data and \nsystem-level inputs to ensure correctness as well as real-world applicability. \nFor quantitative evaluation, the NYU Depth V2 dataset was used. This dataset \nconsists of indoor RGB images paired with ground truth depth maps, and is widely \nused for benchmarking monocular depth estimation models. Evaluation was",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_73",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "performed on a held-out subset consistent with standard benchmark usage, and no \nadditional training or fine-tuning was performed on this dataset. \nFor system-level evaluation, two sources were used. First, a set of 60 images from \nthe SUNRGBD dataset was passed through the full pipeline. Second, structured \nreal-world testing was performed using a live webcam in indoor environments, \ncovering scenarios such as open paths, cluttered spaces, low-texture surfaces, and \nreflective conditions.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_74",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "reflective conditions. \nInput images are directly passed to the object detection and depth estimation \nmodules without explicit manual preprocessing. The depth model (DA v2 small) \ninternally performs the required resizing and normalization as part of its pretrained \npipeline. The predicted depth map is then resized to match the original image \ndimensions for downstream processing. No data augmentation is applied during \nevaluation, as the system operates purely in inference mode.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_75",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "4.3. Text-to-Speech (TTS) Dataset Collection & Strategy \nUnlike our vision models which required massive image datasets for training, our \nText-to-Speech (TTS) strategy focused on rigorous dataset collection for latency \nbenchmarking and stress testing. Because our objective prioritizes action-oriented \nnavigation (e.g., \u201cMove left\u201d) over descriptive awareness (e.g., \u201cThere is a chair\u201d), we \nneeded text datasets that proved our standalone Piper TTS engine (en_US-amy-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_76",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "medium ONNX model) could guarantee near-instantaneous auditory synthesis \nwithout bottlenecking the visual pipeline. \n \nTo evaluate the TTS implementation under both realistic navigation scenarios and \nartificial stress conditions, we curated a comprehensive text benchmark dataset \ntotalling 165 samples across four distinct categories. \n \n1. Custom Navigation Commands (Real-time Usage) \n\u2022 Collection: We manually curated 15 critical, action-oriented",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_77",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "directives specifically tailored to the blind-navigation domain (e.g., \n\"Path blocked, turn left\", \"Obstacle ahead, move right\", \"Safe to \nproceed\"). \n\u2022 Purpose: To measure the absolute base latency for the exact phrases \nthe system outputs in production. \n\u2022 Characteristics: These strings are short (averaging 23.9 characters) \nbut command execution is critical. This dataset proves the system \ncan synthesize critical hazard warnings in roughly ~500-800 ms with",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_7_78",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 7,
+            "page_label": "8"
+        },
+        "page_content": "an excellent Average Real-Time Factor (RTF) of 0.533 (excluding the \ninitial cold-start).",
+        "type": "Document"
+    }
+]

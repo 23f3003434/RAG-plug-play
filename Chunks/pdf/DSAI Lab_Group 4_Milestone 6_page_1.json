@@ -1,0 +1,114 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_42",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "P a g e  1 / 21 \n \n1. Introduction and Problem Statement Definition \n1.1. Background and Motivation \nVisual impairment is a significant global health challenge that profoundly impacts \nindividual autonomy and quality of life. As of 2024, the World Health Organization \n(WHO) estimates that at least 2.2 billion people globally have a near or distance \nvision impairment. In India alone, there are approximately 62 million visually",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_43",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "impaired persons, including 8 million who are completely blind, representing \nnearly a quarter of the global burden. Projections indicate these numbers will rise \nsignificantly by 2050 due to aging populations and the increasing prevalence of \nconditions like diabetic retinopathy. \n \nWhile outdoor navigation has been revolutionized by Global Positioning Systems \n(GPS) and accessible mapping, indoor environments remain a \"black hole\" for",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_44",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "assistive technology. Indoor spaces are characterized by: \n\u2022 Infrastructure Limitations: GPS signals are attenuated by walls and \nceilings, rendering them ineffective for precise positioning. \n\u2022 Dynamic Complexity: Frequent changes in furniture layouts, the presence \nof moving people, and temporary obstructions (e.g., a bag left on a corridor \nfloor) create a hazardous environment. \n\u2022 Near-Field Risks: Research indicates that the white cane, while",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_45",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "foundational, often fails to detect head-level obstacles or low-profile hazards \nlike slippery floors, leading to a high risk of physical injury. \n \n1.2. The Problem: Descriptive vs. Action-Oriented Assistance \nExisting assistive devices primarily focus on descriptive awareness\u2014announcing \n\"Chair at 2 o'clock.\" However, for a user in motion, this information is insufficient. \nKnowing an object exists does not inherently inform the user whether their current",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_46",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "trajectory is safe or if they are about to collide. \n \nOur project addresses this \"interpretation gap.\" The problem we solve is the \ntransition from passive scene understanding to active, action-oriented guidance. \nWe focus on the critical near-field range (0\u20133 meters) where immediate movement \ndecisions must be made to ensure safe, uninterrupted walking. \n \n2. Existing Technologies and Research Gaps \n2.1. Review of Current Solutions",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_47",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "2.1. Review of Current Solutions \nThe field of indoor navigation for the visually impaired is currently divided into two \nprimary technological categories: \n1. Sensory-Based Infrastructure: \n\u2022 RFID and BLE Beacons: These systems utilize radio-frequency \nidentification or Bluetooth Low Energy tags placed throughout a \nbuilding to localize a user. While accurate (often within 0.15m), they \nrequire significant investment in hardware infrastructure and are not",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_1_48",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "scalable across diverse, unmapped indoor environments. \n\u2022 WiFi Trilateration: Uses existing internet access points for \npositioning. While cost-effective, it often lacks the precision (often \n>1m error) required for safe obstacle avoidance.",
+        "type": "Document"
+    }
+]

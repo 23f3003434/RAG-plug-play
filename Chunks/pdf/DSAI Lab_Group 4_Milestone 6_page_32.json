@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_32_190",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 32,
+            "page_label": "33"
+        },
+        "page_content": "P a g e  32 / 21 \n \nHazard Coordinate \nScan 8.96 ms 9.43 ms \nNavigation Logic \nEngine 0.025 ms 0.024 ms \nPiper TTS (Async \nEnqueue) 0.0038 ms 0.0035 ms \nTOTAL PIPELINE \nLATENCY 128.84 ms 117.87 ms \n \nNote on Latency Results: By optimizing the process stream sequentially on GPU, the \npipeline achieved an impressive 128.84 ms average total loop latency per frame (\u223c\n7.7 FPS natively). Furthermore, the initial Model Load operations took",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_32_191",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 32,
+            "page_label": "33"
+        },
+        "page_content": "just 6.14 seconds, and the TTS phrase pre-warming into RAM completed \nin 5.56 seconds seamlessly at boot. \n \n8.3. Precision Evaluation against the SUN RGB-D Dataset \nBeyond inference speed, an active navigation pipeline must demonstrate highly \nconservative decision-making within extremely cluttered spaces. The \naforementioned 60-image evaluation batch purposefully extracted data from SUN \nRGB-D\u2014a dataset characterized by dense living rooms, tight hallways, and severe \nocclusions.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_32_192",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 32,
+            "page_label": "33"
+        },
+        "page_content": "occlusions. \n \n8.3.1. Object Detection (YOLO11s) Module Metrics \nEvaluating over the test frames (at an IOU threshold of 0.5 and confidence of 0.25), \nour fine-tuned YOLO11s model delivered the following metrics: \n\u2022 Mean IOU: 0.865 (Demonstrating incredibly tight, accurate bounding box \nalignment on indoor hazards). \n\u2022 Precision: 0.581 \n\u2022 Recall: 0.383 (F1 Score: 0.462) \n \n8.3.2. Depth Estimation (Geometry) Metrics \nThe monocular depth map generated incredibly responsive masking to nearby",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_32_193",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 32,
+            "page_label": "33"
+        },
+        "page_content": "obstacle geometry. \n\u2022 AbsRel Mean Error: 0.535 \n\u2022 Delta 1 Accuracy: 0.516 \n\u2022 Safety Trigger Consistency: The system proved highly sensitive to nearby \nproximity threats. In 58 out of the 60 tested SUN RGB-D images, the \npipeline identified hazardous pixels bleeding past the strictly \nconservative <1.8m limit. The mean depth of the absolute nearest hazards \nmapped in these dense rooms was an explicitly dangerous 1.098 meters. \n \n8.3.3. Navigation Command Distribution",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_32_194",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 32,
+            "page_label": "33"
+        },
+        "page_content": "8.3.3. Navigation Command Distribution \nTo prove that the pipeline interprets this data into actionable logic rather than \nfreezing, we tracked the decisions synthesized by the navigation logic layer across \nthe SUN RGB-D images. Out of the 60 images processed:",
+        "type": "Document"
+    }
+]

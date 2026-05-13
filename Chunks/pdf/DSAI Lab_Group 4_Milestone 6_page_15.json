@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_15_116",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 15,
+            "page_label": "16"
+        },
+        "page_content": "P a g e  15 / 21 \n \nLoss Gain box/cls/dfl weights 0.5531 0.3528 box=10.0, cls=0.5, dfl=2.0 best \nbalance \nFinal Combo All best HPs combined 0.5575+ 0.3564+ \nAdditive gains; feeds into Stage 3 \nfull training \nTable 6.1 \u2014 Summary of all 12 hyperparameter tuning groups and key findings. \n \n6.1.4. Final Training Configuration \nBased on tuning results, the following configuration was used for the final \nproduction training run on the full DSAI-Unified dataset. \nParameter Value Justification",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_15_117",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 15,
+            "page_label": "16"
+        },
+        "page_content": "Parameter Value Justification \nEpochs 80 Sufficient convergence; patience=10 prevents overfitting \nImage Size 768\u00d7768 Higher resolution improves small-object localization (mAP@50-95 gain \nvs 640) \nBatch Size 32 Stable gradient estimates; fits within T4 VRAM \nOptimizer AdamW Consistently outperforms SGD; lr=0.001 \nLearning Rate 0.001 Optimal for AdamW on this dataset scale \nWeight Decay 0.0001 Light regularization; prevents overfitting without underfitting",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_15_118",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 15,
+            "page_label": "16"
+        },
+        "page_content": "Scale Aug 0.7 Widest scale range tested; maximum localization improvement \nMosaic 1.0 Full mosaic throughout training improves small-object recall \nMixup 0.2 Moderate blending; acts as regularizer for overlapping objects \nDegrees 10\u00b0 Simulates camera tilt; best recall without image distortion \nTranslate 0.15 Handles off-centre object placement effectively \nHSV-S / HSV-V 0.6 / 0.4 Robust to indoor lighting variation; best F1 in lighting tuning",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_15_119",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 15,
+            "page_label": "16"
+        },
+        "page_content": "Flip-LR 0.5 50% horizontal flip doubles effective dataset diversity \nClose Mosaic 10 Disables mosaic for final 10 epochs; sharpens bbox localization \nCos_LR True Cosine annealing schedule improves final-epoch convergence \nWarmup Epochs 3 Gradual LR ramp prevents large early weight updates \nBox / CLS / DFL 10/0.5/2 Emphasises localization; validated in loss-gain tuning \n \n6.1.5. Training Curves & Convergence",
+        "type": "Document"
+    }
+]

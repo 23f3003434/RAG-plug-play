@@ -1,0 +1,50 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_6_69",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "P a g e  6 / 21 \n \n\u2022 Chair/Sofa: >4,000 instances \n\u2022 Bed: 1,407 instances \n \n \nWhy this combination excels: Pooling general-purpose COCO parameters inside a \ncombined dataset of COCO, HomeObject3k and Indoor Image Dataset means the \nmodel trains specifically for the complex, low-visibility interactions visually \nimpaired users face daily. \n \n \nPreprocessing Steps \nBefore feeding raw imagery into the model, the following preprocessing pipeline is",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_6_70",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "implemented to ensure data consistency and improve generalization: \n\u2022 Resizing: All input images are resized to a fixed resolution of 640 \u00d7 640 \npixels to match the network's input layer. \n\u2022 Normalization: Pixel values are scaled from the range [0,255] to [0,1]. \n\u2022 Data Augmentation: To prevent overfitting and improve performance in \ndiverse indoor lighting/angles, the following augmentations were applied \nduring training: \no Mosaic Augmentation: Combining four images into one to help the",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_6_71",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "model learn to detect objects at different scales and positions. \no Geometric Transforms: Rotation (\u00b18.0\u2218), translation (\u00b10.08), and \nscaling (\u00b10.25). \no Color Jittering: Randomly adjusting Hue (0.015), Saturation (0.7), and \nValue (0.4). \no Flipping: Horizontal flipping with a 50% probability.",
+        "type": "Document"
+    }
+]

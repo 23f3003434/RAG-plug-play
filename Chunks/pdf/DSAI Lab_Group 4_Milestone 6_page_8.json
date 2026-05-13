@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_79",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "P a g e  8 / 21 \n \n2. CMU Arctic Dataset (Phonetic Balance) \n\u2022 Collection: 50 samples randomly extracted from the 1,132 total CMU \nArctic sentences. \n\u2022 Purpose: To test the engine's ability to handle phonetically balanced \nsentences (averaging 46.8 characters) without stuttering or dropping \nphonetic accuracy during synthesis. \n\u2022 Performance: Yielded a highly reliable RTF ranging strictly between \n0.242 and 0.877 (Average: 0.372). \n \n3. LJ Speech Dataset (Natural Sentences)",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_80",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "\u2022 Collection: 50 samples randomly sampled from the 13,100 total LJ \nSpeech entries. \n\u2022 Purpose: To evaluate the system on fluid, natural, conversational \nphrasing (averaging 99.8 characters) predicting how the model \nhandles slight deviations from standard commands. \n \n4. LibriSpeech Test-Clean (Long Text Stress Test) \n\u2022 Collection: 50 samples randomly sampled from a pool of 2,620 total \nLibriSpeech instances. \n\u2022 Purpose: Used as a pure stress test. These samples contain long,",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_81",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "complex strings (averaging 123.7 characters). \n\u2022 Outcome: Even at ~4.7x the length of our navigation commands, the \naverage RTF remained heavily optimized at 0.292, proving that TTS \nlatency scales sub-linearly with text length. \n \nData Preparation & Synthesis Simulation Environment: \nOur dataset testing approach was strict regarding production simulation. The text \ndata was not written to disk; instead, the evaluation pipeline parsed the strings",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_82",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "directly into WAV (22.05 kHz) bytes strictly within system RAM using an Async Event \nqueue. We intentionally captured the \"cold-start\" (no warm-up phase) on the very \nfirst sample to observe real-world initial latency (which spiked the RTF to 3.630). By \nprofiling the datasets in this manner, we mathematically deduced that the TTS \nengine processes text ~3x faster than real-time playback (Overall Avg RTF: 0.346 \nacross all 165 inputs), keeping integration overhead to a minimal ~0.011 ms",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_83",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "enqueue time in the broader parallel pipeline. \n \n5. Model Selection & Experiments \nDesigning an active blind-navigation assistant requires balancing two competing extremes: \nhighest possible semantic/geometric accuracy (to ensure user safety) and lowest possible \nlatency (to process edge-hardware triggers in real-time). Because cloud-dependent APIs \nintroduce dangerous latency spikes and privacy risks, all candidate modules had to be \nstrictly edge-deployable.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_8_84",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "strictly edge-deployable. \n \nBelow is an accounting of the experiments, alternatives mapped, and the final logic utilized \nto settle on our tri-module architecture.",
+        "type": "Document"
+    }
+]

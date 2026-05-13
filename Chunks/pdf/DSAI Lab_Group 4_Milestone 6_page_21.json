@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_141",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "P a g e  21 / 21 \n \n7.1.5. Error & Failure Analysis \nThree systematic failure patterns were identified by comparing ground-truth \ncounts with predicted counts on the test set: \n\u2022 The \"Vanishing Cabinet\" Effect (recall = 0.368, -203 detections): \nCabinets are frequently missed because they share colour and edge profile \nwith walls. Their rectangular shape without distinctive handles or \ncompartments leads the model to classify them as background. Mitigation:",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_142",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "Add more annotated Cabinet images with varied backgrounds; consider \ntargeted data augmentation with low-contrast backgrounds. \n\u2022 Over-detection of Potted Plants (+90 false positives): Complex leaf \ntextures resemble other small, cluttered indoor patterns (e.g., ornamental \nobjects, patterned cushions). The model is \"trigger-happy\" for this class. \nMitigation: Increase confidence threshold for Potted Plant to ~0.40; add \nhard-negative examples of similar-looking objects.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_143",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "\u2022 Person scale-invariance issues (recall = 0.634, -266 false negatives): The \nmodel performs well on near-field persons but struggles with distant or \npartially occluded individuals (e.g., a person seated behind a table). This is \nthe most safety-critical failure mode. Mitigation: Augment with more small-\nscale person annotations; consider a dedicated high-recall person detector \nrunning in parallel.Door class ambiguity (mAP@50 = 0.521): Open vs.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_144",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "closed doors, glass doors, and doors viewed at sharp angles produce \ninconsistent detections. Mitigation: Collect domain-specific door images; \nconsider treating door-frame detection as an alternative cue. \n \n7.1.6. Latency & Deployment Metrics \nBeyond accuracy, the navigation use-case imposes strict real-time constraints. \nThe table below summarizes the measured and estimated latency characteristics \nof the YOLO11s module. \nMetric T4 GPU (Kaggle) Laptop CPU (i7) Raspberry Pi 5 (est.)",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_145",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "Inference per frame ~8 ms ~120 ms ~350\u2013500 ms \nFPS (image 768\u00d7768) ~120 fps ~8 fps ~2\u20133 fps \nModel size (PyTorch pt) ~22 MB ~22 MB ~22 MB \nModel size (INT8 ONNX) ~6 MB ~6 MB ~6 MB \nGPU VRAM usage ~0.8 GB N/A N/A \nNMS overhead <2 ms <5 ms <15 ms \n \nOn the target edge platform (Raspberry Pi 5), the estimated inference rate of 2\u20133 \nFPS falls within the acceptable range for walking-pace navigation, where the user \nmoves at approximately 1.2\u20131.4 m/s. At 2 FPS, a new frame is processed every 500",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_21_146",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 21,
+            "page_label": "22"
+        },
+        "page_content": "ms; at 1.4 m/s walking speed, the user travels ~0.7 m between frames \n\u2014 well within the 1.5 m safety threshold defined in Milestone 1. INT8 quantization \nto ONNX format reduces model size from 22 MB to ~6 MB and improves Pi 5 \nthroughput by an estimated 30\u201340%.",
+        "type": "Document"
+    }
+]

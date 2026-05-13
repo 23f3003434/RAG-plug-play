@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_2_7",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "P a g e  2 / 9  \n \nClass Role in Navigation Class Role in Navigation \nPerson Dynamic Obstacle Door Entry/Exit Point \nChair Stationary Obstacle Cabinet Path Boundary \nTable Stationary Obstacle Wardrobe Path Boundary \nSofa Large Obstacle Refrigerator Landmark/Obstacle \nLamp Small Obstacle Bed Large Obstacle \nPotted Plant Small Obstacle   \n \n2.2. Dataset Sources & Filtering Strategy \nRather than using massive, unfiltered datasets which introduce \"noise\" (e.g.,",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_2_8",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "outdoor objects like cars or animals), we implemented a Subset Filtering Strategy. \nWe extracted only the relevant indoor classes from the following sources: \n1. HomeObject-3k: Our primary source for high-fidelity, domestic-scale objects. \nUsed for its realistic indoor lighting. \n2. MS COCO (Targeted Fetch): Specifically queried for \"Refrigerator, \" \"Person, \" and \n\"Bed\" to fill gaps in HomeObject-3k. By targeted fetch we mean we only \ndownloaded the specific classes we needed.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_2_9",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "3. Indoor Object Dataset: Utilized to bolster the \"Chair\" and \"Table\" counts across \nvarious architectural styles. \n4. Bed Dataset: This dataset was specifically chosen to bolster up the bed \ncategory in the dataset. \nJustification: By using subsets, we reduced the total storage requirement from \nhundreds of gigabytes to a manageable \"DSAI-Unified-Dataset\" hosted on Kaggle, \noptimized for rapid YOLO training. \n \n2.3. The Unification Pipeline",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_2_10",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "2.3. The Unification Pipeline \nTo resolve the issue of different datasets using different naming conventions (e.g., \n\"Fridge\" vs. \"Refrigerator\"), we developed a Data Unification Script. \nStep 1: Label Schema Mapping \nWe standardized disparate labels into a single unified schema. \n\u2022 Merging Logic: Classes like \"Opened Door, \" \"Closed Door, \" and \"Refrigerator \nDoor\" were mapped to the parent classes \"Door\" and \"Refrigerator\" \nrespectively to improve model generalization and reduce class-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_2_11",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 2,
+            "page_label": "3"
+        },
+        "page_content": "fragmentation.",
+        "type": "Document"
+    }
+]

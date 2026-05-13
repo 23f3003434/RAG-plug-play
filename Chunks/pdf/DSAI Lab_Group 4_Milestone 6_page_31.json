@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_31_185",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 31,
+            "page_label": "32"
+        },
+        "page_content": "P a g e  31 / 21 \n \n8. Module Integration and Pipeline Evaluation \nTransforming isolated AI models into a functional, real-time assistive technology requires \nstrict orchestration. This section outlines how the semantic (YOLO11s object detection), \ngeometric (Depth-Anything-V2), and execution (Piper TTS) modules were fused into a \nunified application (app.py), followed by an aggressive empirical evaluation of the \npipeline's overall throughput and precision on our SUN RGB-D dataset subset.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_31_186",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 31,
+            "page_label": "32"
+        },
+        "page_content": "8.1. Pipeline Integration Architecture \nTo establish a cohesive perception-to-action flow, we implemented an \nadvanced Framebuffer Pipeline. Instead of processing data streams arbitrarily, \nevery visual frame acts as a unified state container passing through a highly \ncontrolled, synchronous layer: \n \n1. The Sensor Fusion Layer \nOur pipeline enforces a strict precedence rule. When a frame enters the \nsystem: \n\u2022 YOLO11s (Semantic): Extracts 2D bounding boxes.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_31_187",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 31,
+            "page_label": "32"
+        },
+        "page_content": "\u2022 Depth-Anything-V2 (Geometric): Extracts a dense metric depth map. \n\u2022 Spatial Alignment & Hazard Masking: The bounding boxes are \ndirectly projected onto the depth matrix. To guarantee safety, we \nprioritize geometric limits over semantic boxes by applying aggressive \nthreshold checks (\ud835\udc51\ud835\udc4e\ud835\udc5b\ud835\udc54\ud835\udc52\ud835\udc5f_\ud835\udc61\u210e\ud835\udc5f\ud835\udc52\ud835\udc60\u210e\ud835\udc5c\ud835\udc59\ud835\udc51_\ud835\udc5a =\n 1.8\ud835\udc5a, \ud835\udc64\ud835\udc4e\ud835\udc5f\ud835\udc5b\ud835\udc56\ud835\udc5b\ud835\udc54_\ud835\udc61\u210e\ud835\udc5f\ud835\udc52\ud835\udc60\u210e\ud835\udc5c\ud835\udc59\ud835\udc51_\ud835\udc5a =  2.5\ud835\udc5a). Any depth pixels breaching \nthe 1.8\ud835\udc5a danger threshold generate a masking penalty \nof 25.0 (compared to a standard bbox penalty).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_31_188",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 31,
+            "page_label": "32"
+        },
+        "page_content": "2. Asynchronous TTS Execution  \nTo completely decouple the visual throughput overhead from the auditory \nengine, Piper Text-to-Speech runs asynchronously. Instead of pausing the \nframe loop to generate audio, the navigation string is enqueued directly. The \napplication loop jumps instantly to the next frame, dropping the TTS pipeline \nexecution cost to a nearly invisible fractional millisecond (measured \nat 0.0038 ms). \n \n8.2. Pipeline Latency Benchmark (Hardware Execution Metrics)",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_31_189",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 31,
+            "page_label": "32"
+        },
+        "page_content": "During our final module evaluation, the fully integrated sequential pipeline \nprocessed 60 heavily cluttered validation images on CUDA. Microsecond-accurate \nmilestones were recorded to evaluate edge-deployment viability. \nPipeline Stage Mean Latency (ms) P50 Latency / Median \n(ms) \nYOLO11s Object \nDetection 26.36 ms 16.07 ms \nDepth-Anything-V2 \nEstimation 91.92 ms 91.86 ms",
+        "type": "Document"
+    }
+]

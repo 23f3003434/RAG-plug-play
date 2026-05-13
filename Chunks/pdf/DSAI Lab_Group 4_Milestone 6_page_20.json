@@ -1,0 +1,34 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_20_139",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 20,
+            "page_label": "21"
+        },
+        "page_content": "P a g e  20 / 21 \n \nTop performers: Bed (mAP@50 = 0.849) and Sofa (0.795) are the strongest classes. \nTheir large footprint and distinctive visual features make them relatively easy to \ndetect. Weaker performers: Wardrobe (0.448) and Cabinet (0.511) suffer from \nstructural similarity to walls and low contrast against typical indoor backgrounds. \nSafety concern: Door detection at mAP@50 = 0.521 indicates a moderate risk of",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_20_140",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 20,
+            "page_label": "21"
+        },
+        "page_content": "missing exit/entry waypoints, particularly under varied lighting and viewing angles. \nDedicated data collection for the Door class is recommended as a future \nimprovement. \n7.1.4. Visualizations",
+        "type": "Document"
+    }
+]

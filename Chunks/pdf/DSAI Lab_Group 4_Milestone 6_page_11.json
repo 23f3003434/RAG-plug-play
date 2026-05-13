@@ -1,0 +1,114 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_93",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "P a g e  11 / 21 \n \nThe above figure illustrates the trade-off between accuracy and inference speed. \nThe x-axis represents estimated FPS on Raspberry Pi\u2013class hardware, while the y-\naxis represents \u03b41 accuracy (a measure of strict correctness). Each point \ncorresponds to a model, with higher positions indicating better accuracy and \nrightward positions indicating faster inference. \n\u2022 ZoeDepth-N achieves the highest accuracy (\u03b41 \u2248 0.95), particularly in the",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_94",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "near-field region, making it the strongest model from a purely numerical \nperspective. However, it is computationally expensive and unsuitable for \nreal-time deployment on edge devices. \n\u2022 MiDaS models, on the other hand, offer faster inference but exhibit lower \naccuracy (\u03b41 \u2248 0.66\u20130.68) and higher error in near-field regions. This makes \nthem less reliable for navigation tasks where accurate estimation of nearby \nobstacles is critical.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_95",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "obstacles is critical. \n\u2022 Depth Anything V2 Small (Relative variant) provides a balanced trade-off, \nwith moderate accuracy (\u03b41 \u2248 0.76) and reasonable inference speed. It \ndemonstrates stable behavior across different scenes and maintains good \nrelative depth consistency. \nThe Metric Indoor variant of Depth Anything V2 was also evaluated. While it is \ndesigned to output metric depth values, its benchmark performance in this",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_96",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "setup was lower than expected, with higher AbsRel and RMSE compared to \nother models. This indicates that although the model is trained for metric \ndepth, it remains sensitive to dataset-specific scale variations and does not \nconsistently generalize absolute scale in practice. \n \nDespite this, the Metric Indoor variant was selected for the final system. The \ndecision was based not solely on benchmark accuracy, but on its integration",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_97",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "behavior within the full pipeline. The model demonstrated stable relative depth \npredictions in real-world scenarios and worked effectively with threshold-based \ndecision logic. \n \nIn the context of navigation, the system does not require precise metric depth but \nrather consistent identification of nearby obstacles. The selected model, when \ncombined with depth-based hazard zoning and decision rules, provided reliable \nperformance in this regard.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_98",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "performance in this regard. \nTherefore, the final model selection prioritizes stability, generalization, and real-\ntime feasibility over raw benchmark accuracy. \n \n5.3. Text-to-Speech (TTS) Module \n5.3.1. TTS Model Selection Criteria \nThe selection of the TTS engine was governed by three non-negotiable \nrequirements identified in the initial research phase: \n1. Low Latency (<200ms): For a user walking at a normal pace, the delay \nbetween detecting an obstacle and hearing a command must be near-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_11_99",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 11,
+            "page_label": "12"
+        },
+        "page_content": "instantaneous. \n2. Offline Execution: To maintain privacy and eliminate dependency on \nunstable indoor internet connections, the model must run entirely on the \nedge device.",
+        "type": "Document"
+    }
+]

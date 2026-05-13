@@ -1,0 +1,18 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_9_39",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 9,
+            "page_label": "10"
+        },
+        "page_content": "P a g e  9 / 9  \n \n4.5. Summary of Milestone 2 Updates \nBy unifying our object detection classes into the DSAI-Unified-Lite format, \nstandardizing depth maps via NYU-Depth V2, and selecting the high-performance \nPiper TTS, the team has moved from a broad list of potential datasets to a verified, \nhigh-speed production pipeline. \nThis concludes the data preparation phase, providing the necessary foundation for \nthe end-to-end integration verified in Milestone 3.",
+        "type": "Document"
+    }
+]

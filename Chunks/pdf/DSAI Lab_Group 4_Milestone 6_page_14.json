@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_14_111",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 14,
+            "page_label": "15"
+        },
+        "page_content": "P a g e  14 / 21 \n \nHardware: All training and hyperparameter tuning experiments were executed on \nKaggle dual NVIDIA Tesla T4 GPUs (16 GB VRAM \u00d7 2 = 32 GB total), utilising 12 \nparallel Kaggle sessions simultaneously during the HP tuning stage. Total GPU-\nhours consumed across 70+ model runs exceeded 350 hours. \n \n6.1.3. Hyperparameter Tuning Experiments \n60 models were trained across 12 distinct hyperparameter groups on a 3,000-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_14_112",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 14,
+            "page_label": "15"
+        },
+        "page_content": "image subset to balance exploration speed with statistical reliability. Each group \nvaried one set of related parameters while holding others constant. \n \nFigure 6.1 \u2014 Best mAP@50 and mAP@50-95 achieved in each hyperparameter tuning group (YOLO11s, 3,000-\nimage subset). The dotted line shows the full-dataset baseline. \nTuning Group \nKey Parameter(s) \nVaried Best mAP@50 \nBest \nmAP@50-95 Key Finding \nImage Scale scale: 0.3 \n\uf0b3 0.7 0.5575 \n(scale=0.7) 0.3564 Higher scale boosts localization;",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_14_113",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 14,
+            "page_label": "15"
+        },
+        "page_content": "scale=0.7 optimal \nMosaic/Mixup mosaic: 0.5/1.0; mixup: 0\u2013\n0.3 \n0.5531 \n(mosaic= \n1.0,mixup=0.3) \n0.3528 Full mosaic with moderate mixup \nimproves recall \nImage Size imgsz: 640 \n\uf0b3 1024 0.5531 0.3528 \n640px sufficient for subset; 768 \nused in final \nBatch Size batch: 8 \n\uf0b3 64 0.5531 0.3528 Batch 32 optimal: stable gradients + \ngeneralization \nLighting Aug hsv_h/s/v combinations 0.5524 0.3552 \nhsv_s=0.6, hsv_v=0.4 best for \nindoor variability \nRotation/Persp degrees: 5\u201320; persp:",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_14_114",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 14,
+            "page_label": "15"
+        },
+        "page_content": "Rotation/Persp degrees: 5\u201320; persp: \n0\u20130.002 0.5495 (deg=20) 0.3534 \nModerate rotation helps; \ndegrees=10 best trade-off \nCopy-Paste/Era \nse \ncopy_paste: 0\u20130.3; \nerasing: 0.2\u20130.5 0.5373 0.3471 No gain over baseline; disabled in \nfinal config \nOptimizer/LR SGD vs AdamW; lr0: \n0.0003\u20130.01 \n0.5477 \n(AdamW, \nlr=0.001) \n0.3491 AdamW clearly outperforms SGD \nfor this dataset \nWeight Decay wd: 0.0001\u20130.001 0.5531 0.3528 \nwd=0.0001 provides best \nregularization",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_14_115",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 14,
+            "page_label": "15"
+        },
+        "page_content": "regularization \nLR Warmup warmup_epochs: 1\u20135 0.5531 0.3528 3 warmup epochs prevent early \ninstability",
+        "type": "Document"
+    }
+]

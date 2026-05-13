@@ -1,0 +1,50 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_4_16",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "P a g e  4 / 9  \n \n2.5. Dataset Statistics & Class Distribution \nTo address Class Imbalance, we analyzed the distribution of the unified dataset. \n \nFig 2.5.1: Class Distribution \n \nThe person category had the majority samples as we had to focus on identifying is there is \nperson present ahead.  \n2.6. Optimized Navigation-Centric Variation (DSAI-Unified-3Cls) \nWhile the primary DSAI-Unified-Dataset features 11 distinct classes for detailed",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_4_17",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "scene understanding, we developed an optimized \"Lite\" version specifically \ndesigned to prioritize navigational safety and real-time inference speed. \n2.6.1. Class Collapse & Mapping Logic \nIn this variation, we transitioned from a detailed classification task to a Functional \nHazard Model. We collapsed the original 11 classes into 3 high-priority categories \nbased on their role in the navigation pipeline: \nOriginal Classes Unified \nNavigation Class Functional Rationale",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_4_18",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 4,
+            "page_label": "5"
+        },
+        "page_content": "Navigation Class Functional Rationale \nPerson Person Dynamic hazard requiring high-priority avoidance \nand specialized social-distancing logic. \nDoor Door Critical navigational waypoint for room-to-room \ntransitions. \nChair, Sofa, Table, \nBed, Lamp, Plant, \netc. \nObstacle \nGeneral stationary hazards. For the purpose of \npathfinding, the specific type of furniture is \nsecondary to its physical occupancy of space.",
+        "type": "Document"
+    }
+]

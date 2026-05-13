@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_17_126",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 17,
+            "page_label": "18"
+        },
+        "page_content": "P a g e  17 / 21 \n \n \nTherefore, given: \n\u2022 strong quantitative performance (\u03b41 \u2248 0.909) \n\u2022 satisfactory real-world behavior \n\u2022 and diminishing returns from additional training \n \nWe conclude that further fine-tuning is not required for this application. \n \n \n6.3. TTS Module \n6.3.1. Training Status: Pre-trained Model Utilization \nFor the Text-to-Speech module, the team opted not to perform additional model \ntraining or fine-tuning. Instead, the system utilizes the Piper TTS engine with pre-",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_17_127",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 17,
+            "page_label": "18"
+        },
+        "page_content": "trained ONNX medium weights. \n \n6.3.2. Justification for No Training \nThe decision to bypass fine-tuning was based on an empirical cost-benefit \nanalysis conducted during Milestone 4 and Milestone 6 evaluations. The following \nfactors justify this claim: \n \n\u2022 Diminishing Returns on System Utility: Fine-tuning TTS models typically \ntargets \"voice naturalness\" or \"emotional prosody.\" However, for a \nnavigation aid, the primary requirements are clarity and speed. Pre-trained",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_17_128",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 17,
+            "page_label": "18"
+        },
+        "page_content": "models already provide 100% intelligibility for the standard navigational \ncommand set (e.g., \"Step left,\" \"Obstacle ahead\"). \n\u2022 Accuracy Metrics: Evaluations showed that the pre-trained Piper weights \nhandled phonetic conversion via eSpeak-NG with zero errors for the 11 \nclasses and navigational terms used in this project. \n\u2022 Resource Allocation: By utilizing a highly optimized, pre-trained ONNX \nmodel, we minimized the CPU/GPU footprint of the TTS module. This allows",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_17_129",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 17,
+            "page_label": "18"
+        },
+        "page_content": "the system to prioritize computational resources for the more demanding \nObject Detection (YOLO11s) and Depth Estimation (Depth-Anything-V2) \nmodules. \n\u2022 Hardware Efficiency: The pre-trained model achieved a Real-Time Factor \n(RTF) of < 1.0, meaning it synthesizes speech faster than real-time without \nthe need for weight optimization. \n \n6.3.3. Hyperparameter Tuning \nWhile the weights were not retrained, the inference hyperparameters were tuned",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_17_130",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 17,
+            "page_label": "18"
+        },
+        "page_content": "to optimize the user experience for real-time navigation. \n\u2022 Noise Scale (\ud835\udfce. \ud835\udfd4\ud835\udfd4\ud835\udfd5): Adjusted to balance the robotic vs. natural tone. \nLowering this slightly improved the crispness of consonants, which is vital \nfor hearing commands over indoor ambient noise. \n\u2022 Length Scale (1.0): Set to a standard rate to ensure instructions are neither \ntoo fast (unintelligible) nor too slow (causing a delay in user reaction).",
+        "type": "Document"
+    }
+]

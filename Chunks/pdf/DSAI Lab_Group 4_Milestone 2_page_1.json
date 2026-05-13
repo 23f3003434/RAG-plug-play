@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_1_3",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "P a g e  1 / 9  \n \n1.  Introduction & Objectives \nThe objective of Milestone-2 is to identify, evaluate, and prepare datasets required for \ntraining the perception and interaction modules of the navigation assistance system. \nThe datasets used in this project support three primary components of the system: \n1. Object Detection Module \u2013 detects indoor obstacles and objects using RGB \nimages. \n2. Depth Estimation Module \u2013 estimates distance to objects from monocular camera \nimages.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_1_4",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "images. \n3. Speech / TTS Module \u2013 converts navigation decisions into spoken instructions. \n \nThe goal of this milestone is to ensure that the data used for these modules is: \n\u2022 Clearly sourced and legally usable \n\u2022 Properly structured and formatted \n\u2022 Sufficient in quantity and diversity \n\u2022 Free from significant quality issues \n\u2022 Prepared in a reproducible preprocessing pipeline \n\u2022 Split correctly to avoid data leakage \n \n1.1. Data-Specific Scope & Assumptions \n \nIn-Scope Out-of-Scope",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_1_5",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "In-Scope Out-of-Scope \nIndoor environment datasets Outdoor navigation datasets \nNear-field obstacle detection (0\u20133 meters) Large-scale SLAM map datasets \nRGB camera-based perception Long-range depth estimation (>5 meters) \nDepth estimation from monocular or RGB-D \ndatasets \nGPS-based navigation \nSpeech synthesis datasets for navigation \ninstructions \n \nTable 1.1: Data-Specific Scope & Assumptions \n \n2. Object Detection Dataset Identification & Unification \n2.1. Target Class Taxonomy",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_1_6",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 1,
+            "page_label": "2"
+        },
+        "page_content": "2.1. Target Class Taxonomy \nTo ensure the system remains focused on actionable indoor navigation, we \nidentified 11 critical classes. These classes were selected based on their frequency \nin indoor environments and their status as potential navigational hazards or \nlandmarks.",
+        "type": "Document"
+    }
+]

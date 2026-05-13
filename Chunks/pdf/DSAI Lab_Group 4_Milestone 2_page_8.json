@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_8_34",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "P a g e  8 / 9  \n \n4.2. Model Benchmarking & Selection \nModel RTF (on \nRPi5) \nLatency \n(ms) Licensing Selection Status \nPiper (Onnx) ~0.05 < 100ms MIT SELECTED \nCoqui TTS (VITS) ~1.20 > 1500ms Mozilla Rejected (Too slow) \ngTTS (Google \nCloud) N/A > 800ms Proprietary Rejected (Req. \nInternet) \nEspeak-NG 0.02 < 50ms GPL Backup (Low Quality) \n \nBenchmarking Analysis: \n\u2022 Why Piper? Our testing (as shown in the provided charts) indicates that Piper",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_8_35",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "TTS using ONNX runtime provides a near-instantaneous response. An RTF of \n0.05 means it can synthesize 1 second of speech in 50ms. \n\u2022 Internet Independence: Many speech datasets/models require cloud \nconnectivity. By utilizing Piper, which was trained on the LibriTTS and \nThorsten datasets, we maintain a fully offline system, ensuring user safety \neven in areas with poor network coverage. \n \n4.3. Speech Preprocessing & Synthesis Pipeline",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_8_36",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "To ensure the navigation commands are clear and \"action-oriented, \" we \nimplemented a text-normalization and streaming pipeline: \n\u2022 Instruction Normalization: The raw text from the \nNavigationDeterministicLogic (e.g., \"Obstacle at 0.5m\") is passed through a \nregex-based normalizer to ensure units like \"m\" are spoken as \"meters\" to \navoid ambiguity. \n\u2022 Phoneme Conversion: Piper converts text to phonemes using the eSpeak-\nNG backend, which ensures consistent pronunciation of navigational terms.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_8_37",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "\u2022 Low-Latency Streaming: Instead of generating a full WAV file and then \nplaying it, we utilize chunked audio streaming. The system begins playing the \nfirst syllable of the instruction while the rest of the sentence is still being \nsynthesized, reducing the \"perceived latency\" to near zero. \n \n4.4. Verification of Licensing and Usage \n\u2022 Piper / ONNX: MIT License (Permissive for research). \n\u2022 LibriTTS / LJSpeech: Public Domain / CC BY 4.0 (Compatible with project \nrequirements).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_8_38",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 8,
+            "page_label": "9"
+        },
+        "page_content": "requirements). \n\u2022 eSpeak-NG: GPL v3 (Used as a standalone dependency).",
+        "type": "Document"
+    }
+]

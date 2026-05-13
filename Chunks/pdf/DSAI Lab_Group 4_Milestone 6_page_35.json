@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_35_202",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 35,
+            "page_label": "36"
+        },
+        "page_content": "P a g e  35 / 21 \n \n9.2. Running the Streamlit Web Application Locally \nTo facilitate easier testing of the pipeline via a graphical user interface (GUI) before \npushing cloud artifacts, a local Streamlit web application was designed. \n \n1. Setup Required \nUsing the local UI requires specific cloud-oriented packages. These must be \ninstalled from the Hugging Face requirements list: \npip install -r requirements-hf.txt \n \n2. Launching the App",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_35_203",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 35,
+            "page_label": "36"
+        },
+        "page_content": "2. Launching the App \nTo trigger the UI server natively on your machine, deploy the Streamlit \ncommand binding the local UI parameters: \nstreamlit run app/streamlit_app.py \nThis process automatically spans a localized port (typically \nhttp://localhost:8501), generating an interactive web console mirroring our \ncloud-hosted application, entirely bypassing internet API throttling for rapid \nmodule debugging. \n \n9.3. Deployment Implementations & Milestones",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_35_204",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 35,
+            "page_label": "36"
+        },
+        "page_content": "The final objective of this application is deployment. During this milestone, three \ndistinct environments were targeted and actively configured. \n \n9.3.1. Hugging Face Spaces Deployment (Cloud Testing Environment) \nTo make the application universally accessible for testing evaluations by \ndevelopers and external contributors, we established a Hugging Face Space \n(Saransh482003/DSAI-Project-Navigation-Assistant). \n\u2022 How it Started: Instead of pushing the repository blindly, a",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_35_205",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 35,
+            "page_label": "36"
+        },
+        "page_content": "programmatic deploy.py script was engineered using the HfApi(). \n\u2022 Setup Logistics: The deployment strictly uploads target directories \nvia api.upload_folder(), circumventing heavy, unnecessary \nbackground tracking files. The destination server boots directly from a \ncustom Dockerfile based on python:3.10-slim. It invokes apt-get logic \nto explicitly grant vital Linux dependencies (libgl1 and libglib2.0-0) that are \nnatively absent but critically enforced by headless OpenCV bindings.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_35_206",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 35,
+            "page_label": "36"
+        },
+        "page_content": "\u2022 By funnelling through Hugging Face's Git LFS protocol, the \nlarge . \ud835\udc5d\ud835\udc61 and . \ud835\udc5d\ud835\udc61\u210e weight architectures load directly into the container \nseamlessly.",
+        "type": "Document"
+    }
+]

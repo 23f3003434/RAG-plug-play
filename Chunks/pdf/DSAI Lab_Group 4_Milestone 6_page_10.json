@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_10_89",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 10,
+            "page_label": "11"
+        },
+        "page_content": "P a g e  10 / 21 \n \n\u2022 Highest mAP@50: 0.6394 \u2014 outperforms all nano variants and matches or \nexceeds all small variants at equivalent epochs, including YOLOv8s \n(0.6271) and YOLOv10s (0.6371). \n\u2022 Highest mAP@50-95: 0.4275 \u2014 the most stringent localization metric, \nindicating superior bounding-box accuracy across multiple IoU thresholds. \n\u2022 Best Precision\u2013Recall balance: Precision of 0.7014 and Recall of 0.5925 \ngive an F1 of 0.6424, the highest among all tested models. High precision is",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_10_90",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 10,
+            "page_label": "11"
+        },
+        "page_content": "important to avoid phantom obstacles; high recall is critical for user safety. \n\u2022 Compact footprint (~3M parameters): Enables real-time inference at \nacceptable frame rates on the target edge hardware (Raspberry Pi 5 or \nequivalent laptop), unlike larger 'medium' or 'large' variants. \n\u2022 Stable convergence at 100 epochs: Increasing epochs from 50 to 100 \nyielded a meaningful gain of +0.63% mAP@50 and +0.72% mAP@50-95 \nover YOLO11s at 50 epochs, confirming the model benefits from extended",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_10_91",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 10,
+            "page_label": "11"
+        },
+        "page_content": "training. \n\u2022 Superior feature extraction: YOLO11s employs a redesigned C3k2 block \nin its CSP backbone and a more efficient PANet neck compared to \nYOLOv8s, enabling better multi-scale feature fusion at equivalent \nparameter counts. \n \n5.2. Depth Estimation Module \nTo identify a suitable depth estimation model for indoor navigation, multiple models \nwere evaluated on the NYU Depth V2 benchmark, including MiDaS variants, \nZoeDepth-N, and Depth Anything V2.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_10_92",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 10,
+            "page_label": "11"
+        },
+        "page_content": "ZoeDepth-N, and Depth Anything V2. \nThe comparison focused on key factors relevant to the application: depth accuracy \n(AbsRel, RMSE, \u03b41), near-field performance (0\u20133 m range), and inference speed on \nedge hardware.",
+        "type": "Document"
+    }
+]

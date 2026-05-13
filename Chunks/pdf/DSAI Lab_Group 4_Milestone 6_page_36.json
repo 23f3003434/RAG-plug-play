@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_36_207",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 36,
+            "page_label": "37"
+        },
+        "page_content": "P a g e  36 / 21 \n \n \n \n9.3.2. Mobile Edge-Deployment Setup (Android Implementation) \nBecause visually impaired individuals require mobility, we initialized the \narchitectural transition to Android application deployment. \n\u2022 The ONNX Vectorization: Android ARM processors cannot reliably buffer \nmassive . \ud835\udc5d\ud835\udc61 PyTorch tensors at high FPS. Thus, the \nscript export_android_models.py was developed specifically to \ntranslate the native models. The script actively strips PyTorch wrappers and",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_36_208",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 36,
+            "page_label": "37"
+        },
+        "page_content": "forcefully cross-compiles both the YOLO11s object detector and the ViT-S \nDepth-Anything-V2 architectures natively into standard .onnx formats \n(locking explicitly with opset=14 for cross-platform determinism). Seeing \nas Piper TTS inherently utilizes ONNX, this breakthrough aligns all three \nmodules into standard mobile-executable footprints. \n \n9.3.3. Simulating Raspberry Pi 5 Wearable Environments via Docker \nThe ultimate vision for this navigation architecture involves a head-mounted",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_36_209",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 36,
+            "page_label": "37"
+        },
+        "page_content": "wearable device running completely locally off a Raspberry Pi 5. Since we did not \nhave physical access to the Pi 5 hardware throughout the duration of this \nmilestone testing phase, we leveraged Docker constraints to mimic it. \n\u2022 The Approach: We engineered a local Docker Container artificially \nbottlenecked to reflect the physical parameter ceilings of a Raspberry Pi 5 \n($8$GB RAM boundaries, heavily throttled computing constraints tracking \nARM behaviors).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_36_210",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 36,
+            "page_label": "37"
+        },
+        "page_content": "ARM behaviors). \n\u2022 The Result: Pushing the navigation pipeline directly inside this simulated \nbottleneck heavily dictated our earlier evaluations. Because the simulated \nhardware began instantly dropping frames beneath real-time limits, it \ncatalyzed the invention of our Pipeline's \"Process Every N Frames\" \ncaching heuristic and the eventual removal of our failing Parallel Execution \nmechanism. Evaluating against this constrained container mathematically",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_36_211",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 36,
+            "page_label": "37"
+        },
+        "page_content": "secures that our deterministic logic engine guarantees pipeline \nfunctionality once physically burned onto a commercial Raspberry Pi later \ndown the line.",
+        "type": "Document"
+    }
+]

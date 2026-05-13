@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_12_100",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 12,
+            "page_label": "13"
+        },
+        "page_content": "P a g e  12 / 21 \n \n3. High Intelligibility: Navigational commands must be clear and distinct, even \nin moderately noisy indoor environments. \n \n5.3.2. Selected Architecture: Piper TTS \nAfter evaluating several options (including GTTS and Espeak), the team settled on \nPiper, a fast, local neural TTS engine that utilizes the ONNX Runtime. \n\u2022 Phonemization Backend: Piper utilizes eSpeak-NG to convert text into \nphonemes, ensuring consistent and accurate pronunciation of navigational",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_12_101",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 12,
+            "page_label": "13"
+        },
+        "page_content": "terms and units (e.g., converting \"m\" to \"meters\"). \n\u2022 Async Synthesis: To minimize \"perceived latency,\" the system was \nimplemented with an asynchronous execution model. Instead of waiting \nfor a full audio file to generate, the system utilizes chunked audio \nstreaming, allowing playback to begin as soon as the first syllable is \nsynthesized. \n\u2022 Model Format: By using the .onnx format, the system leverages hardware-\nspecific optimizations, resulting in significant speed improvements over",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_12_102",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 12,
+            "page_label": "13"
+        },
+        "page_content": "traditional deep learning models. \n \n5.3.3. Metrics and Performance Analysis \nThe experiments focused on two primary metrics: Real-Time Factor (RTF) and \nSynthesis Latency. \nMetric Definition Observed Value \n(Nav. Dataset) Status \nReal-Time \nFactor (RTF) \nSynthesis Time / \nAudio Duration \n< 1 (Faster than \nreal-time) PASS \nSynthesis \nLatency \nTime until first \nsyllable is ready 25ms \u2013 68ms PASS \nTotal Pipeline \nOverhead \nTTS contribution to \nend-to-end loop \n< 0.02ms (with \nasync) PASS",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_12_103",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 12,
+            "page_label": "13"
+        },
+        "page_content": "< 0.02ms (with \nasync) PASS \n \nKey Findings: \n\u2022 Efficiency: The RTF consistently remained below 1.0, meaning the system \ngenerates audio faster than the user can hear it. \n\u2022 Consistency: Latency for the navigation-specific commands was highly \npredictable, rarely exceeding 50ms, which is well within the safety \nthreshold required for real-time guidance. \n\u2022 Stability: Unlike the SLM-based approach (evaluated in Milestone 3), the",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_12_104",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 12,
+            "page_label": "13"
+        },
+        "page_content": "Piper-based TTS showed zero \"hallucination\" in pronunciation or command \ndelivery.",
+        "type": "Document"
+    }
+]

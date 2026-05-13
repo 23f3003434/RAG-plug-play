@@ -1,0 +1,66 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_28_174",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 28,
+            "page_label": "29"
+        },
+        "page_content": "P a g e  28 / 21 \n \nThe system shows improved object detection performance compared to earlier \nevaluations, with higher precision and recall. Depth estimation continues to \nexhibit high numerical error due to the absence of scale alignment, but remains \nuseful for relative spatial understanding. \nThe hazard module shows significantly increased detection coverage, with danger \nzones identified in 58 out of 60 images, indicating a more conservative and safety-\noriented configuration.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_28_175",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 28,
+            "page_label": "29"
+        },
+        "page_content": "oriented configuration. \n \n7.4.3. Depth-based Hazard Modelling Analysis \n \nFigure 7.4.2 : Distribution of danger, warning, and near-field pixels across the evaluation set. The increased \ndensity of danger pixels reflects the more conservative hazard thresholds, ensuring improved detection of \nnearby obstacles. \n \nThe hazard modeling module segments the scene into distance-based zones using \ndepth estimates. The updated thresholds result in a substantial increase in",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_28_176",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 28,
+            "page_label": "29"
+        },
+        "page_content": "detected danger pixels, reflecting a more conservative safety margin. \nAcross the evaluation set, danger regions are present in nearly all scenes, with an \naverage nearest hazard depth of approximately 1.09 meters. This aligns well with \nthe defined safety boundary and indicates that the system is effectively identifying \nnearby obstacles. \nThe increase in danger pixel counts compared to earlier configurations \ndemonstrates that the system prioritizes safety by expanding the critical zone,",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_28_177",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 28,
+            "page_label": "29"
+        },
+        "page_content": "reducing the likelihood of missed obstacles in navigation. \n \n7.4.4. Navigation Behaviour Analysis",
+        "type": "Document"
+    }
+]

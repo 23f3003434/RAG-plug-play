@@ -1,0 +1,98 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_159",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "P a g e  25 / 21 \n \nThe figure compares raw predictions with EMA-smoothed outputs across different \nfailure modes. In dynamic motion scenarios, raw predictions exhibit high \ninstability, which is reduced significantly after smoothing. For example, in the \nmotion case, the raw variation reduces from approximately 0.161 to 0.023 after \nEMA, indicating improved temporal consistency. \n \nIn low-light conditions, EMA helps reduce noise in depth estimation, resulting in",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_160",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "smoother and more coherent depth maps. Similarly, in moderately cluttered \nenvironments, EMA stabilizes object boundaries and improves consistency in \nnavigation decisions. \n \nHowever, certain limitations remain. In reflective surfaces such as mirrors, depth \nambiguity persists even after smoothing, as the underlying model struggles to \ninterpret reflected geometry. In densely cluttered scenes, EMA improves stability \nbut cannot fully resolve ambiguous object boundaries.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_161",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "Overall, EMA smoothing improves temporal stability and reduces prediction noise, \nparticularly in dynamic and moderately complex environments. However, it does \nnot address fundamental limitations such as scale ambiguity or structural \nmisinterpretation in challenging scenes. \n \n7.2.7. Conclusion \nThe evaluation demonstrates that the depth estimation module performs strongly \nunder controlled benchmark conditions when scale alignment is applied. The",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_162",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "model is able to accurately capture scene geometry and relative depth \nrelationships. \nHowever, absolute depth estimation remains sensitive to scale ambiguity, which \nlimits direct applicability of numerical metrics in real-world scenarios. \nDespite this limitation, the model\u2019s consistency in relative depth prediction makes \nit suitable for downstream navigation tasks, where relative proximity is more \ncritical than exact metric accuracy. \n \n7.3. Text-to-Speech",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_163",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "7.3. Text-to-Speech \nThis section provides a quantitative and qualitative evaluation of the standalone TTS \nmodule to ensure it meets the safety and usability standards required for real-time \nnavigation. \n \n7.3.1. Evaluation Objective \nThe primary goal of this evaluation was to measure the temporal efficiency and \nlinguistic clarity of the Piper TTS engine. In a navigation context, even a minor delay \nin speech synthesis can lead to a \"late\" instruction, potentially resulting in a",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_25_164",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 25,
+            "page_label": "26"
+        },
+        "page_content": "collision. \n \n7.3.2. Benchmark Methodology \nThe evaluation followed a three-step standardized approach: \n\u2022 Command Set Definition: A fixed set of 12 critical navigation commands \nwas utilized (e.g., \"Stop,\" \"Move left,\" \"Obstacle ahead at 0.5 meters\").",
+        "type": "Document"
+    }
+]

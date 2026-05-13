@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_6_24",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "P a g e  6 / 9  \n \nJustification for Selection \n\u2022 Architectural Alignment: Our core depth model, Depth Anything (v2), was \nspecifically pre-trained and fine-tuned using the NYU-Depth V2 distribution. \nBy utilizing the same dataset for our internal validation, we ensure that the \nmodel\u2019s weight biases and environmental assumptions (indoor lighting, \ntypical ceiling heights, floor textures) match our target use case. \n\u2022 Standardized Benchmarking: NYU-Depth V2 provides high-resolution",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_6_25",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "ground truth labels in meters, allowing us to accurately measure absolute \nerror\u2014a critical metric for a navigation system where knowing if an obstacle \nis at 0.5m vs 1.5m is vital. \n \n3.2. Comparative Model Benchmarking \nTo determine the best model for real-time inference on a portable device (Raspberry \nPi 5), we evaluated five SOTA (State-of-the-Art) models. The evaluation focused on \naccuracy (AbsRel, RMSE, \ud835\udc511) versus operational speed (FPS).",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_6_26",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "Rank Model Metric? Params AbsRel RMSE d1 Near-\nd1 \nGPU \nms \nRPi5 \nFPS \nScore/10 RPi5 \nOK? \n1 ZoeDepth-N Indoor YES 344.0M 0.075 0 0.955 0.9072 \n \n0.3 7.32 NO-too \nslow \n2 DA-V2-Small \nRelative \nno 24.8M 0.1744 0.559 0.769 0.6989 74 3.2 6.1 YES \n3 MiDaS v2.1 Small no 21.0M 0.2341 0.7051 0.6651 0.6144 16 6 6.07 YES \n4 DA-V2-Small Metric \nIndoor \nYES 24.8M 0.3574 1.1075 0.3657 0.3612 72 3 5.7 YES \n5 MiDaS v3.1 DPT-\nHybrid \nno 123.0M 0.2235 0.6942 0.6861 0.6093 111 0.8 5.06 NO-too \nslow",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_6_27",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "slow \n \nBenchmarking Analysis \n\u2022 The Accuracy-Speed Trade-off: While ZoeDepth achieved the highest \naccuracy ($d1=0.955$), its inference speed of 0.3 FPS on a Raspberry Pi 5 \nmakes it unusable for live navigation. \n\u2022 Optimal Candidates: DA-V2-Small (Relative) and MiDaS v2.1 Small \nemerged as the most viable candidates. While MiDaS is faster (6.0 FPS), \nDepth Anything V2 (Small) provides a superior balance of spatial awareness",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_6_28",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 6,
+            "page_label": "7"
+        },
+        "page_content": "and stability, which is necessary for our risk-based deterministic logic.",
+        "type": "Document"
+    }
+]

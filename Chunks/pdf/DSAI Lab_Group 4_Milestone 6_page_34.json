@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_34_197",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 34,
+            "page_label": "35"
+        },
+        "page_content": "P a g e  34 / 21 \n \n9. How to Use & Deployment \nGiven that our active blind-navigation assistant is designed as an edge-oriented, real-time \nfeedback system, successful deployment requires stringent execution environments. This \nsection covers how the application can be utilized locally, verified through our local UI \ninterfaces, and deployed across external computational platforms, including mobile \nprocessors and artificial hardware constraints. \n \n9.1. How to Use (Local Pipeline Setup)",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_34_198",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 34,
+            "page_label": "35"
+        },
+        "page_content": "9.1. How to Use (Local Pipeline Setup) \nTo execute the core perception pipeline natively on a local machine, engineers and \nusers must initialize the foundational CLI tools. \n1. Cloning the Repository \nBegin by cloning the main repository to your local directory: \ngit clone https://github.com/Saransh482003/Group-4-DS-and-\nAI-Lab-Project \ncd Group-4-DS-and-AI-Lab-Project \n \n2. Environment Configuration \nDue to the vast matrix of deep-learning libraries, we rely on a strict virtual",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_34_199",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 34,
+            "page_label": "35"
+        },
+        "page_content": "environment setup. \npython -m venv env \nsource env/bin/activate  # On Windows: env\\Scripts\\activate \npip install -r requirements.txt \n \n3. Model Weights Initialization \nThe local system requires access to the exact fine-tuned inference weights. \nEnsure the following files exist (download or map them from internal training \nlogs): \n \n\u2022 YOLO11s-Final-Training.pt \n\u2022 depth_anything_v2_metric_hypersim_vits.pth \n\u2022 en_US-amy-medium.onnx (The Piper TTS engine) \n \n4. Triggering the Real-Time Pipeline",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_34_200",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 34,
+            "page_label": "35"
+        },
+        "page_content": "4. Triggering the Real-Time Pipeline \nTo launch the primary deterministic navigation logic bounding all three \nmodules, trigger the main script wrapper from the terminal: \npython app/app.py \nWhat this does: Starting the script initiates an OpenCV camera capturing \nloop. The engine allocates the dual-stream models (YOLO11s and Depth-\nAnything-V2) to the active local hardware (CUDA or CPU), concurrently \ncaching the Piper execution environment, and launching the dense visual",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_34_201",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 34,
+            "page_label": "35"
+        },
+        "page_content": "window showcasing semantic boundaries masked by the geometric danger \nthreshold overlays.",
+        "type": "Document"
+    }
+]

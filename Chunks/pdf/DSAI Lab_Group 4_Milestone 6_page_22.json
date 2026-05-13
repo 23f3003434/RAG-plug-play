@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_22_147",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 22,
+            "page_label": "23"
+        },
+        "page_content": "P a g e  22 / 21 \n \n7.2. Depth Estimation Module \n7.2.1. Evaluation setup \nThe depth estimation module was evaluated on the NYU Depth V2 dataset, which \nprovides dense ground truth depth maps for indoor scenes. This enables \ncontrolled and quantitative benchmarking of model performance. \nAll evaluations were conducted on the official test split (654 images), ensuring that \nthe data used for evaluation was fully held out and not seen during training or \nmodel selection.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_22_148",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 22,
+            "page_label": "23"
+        },
+        "page_content": "model selection. \nThe experiments were run using the Depth Anything V2 Small (Metric Indoor) \nmodel in inference mode, without any training or fine-tuning on the evaluation \ndataset. \n \nKey observations from the benchmark evaluation are as follows: \n\u2022 Direct inference produces moderate performance (indicating that the \nmodel captures scene structure but suffers from scale inconsistency.)  \n\u2022 When scale-shift alignment or median scaling is applied, there is a",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_22_149",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 22,
+            "page_label": "23"
+        },
+        "page_content": "significant improvement across all metrics. For instance, AbsRel reduces \nfrom approximately 0.21 to below 0.1, and \u03b41 accuracy increases from \naround 0.68 to above 0.90. \n\u2022 Multi-scale TTA did not provide consistent improvements and in some \ncases degraded performance, suggesting that it is not beneficial for this \nsetup. \n\u2022 This clearly indicates that the model is able to learn accurate relative depth \nrelationships, but struggles with absolute scale.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_22_150",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 22,
+            "page_label": "23"
+        },
+        "page_content": "It is important to note that both scale-shift alignment and median scaling rely on \nground truth depth information and are therefore restricted to offline evaluation. \nThese techniques cannot be used in real-world deployment, where ground truth is \nunavailable. \n \n7.2.2. Evaluation Metrics \nThe model was evaluated using standard depth estimation metrics that capture \nboth absolute and relative performance characteristics. \nMetric Description Relevance to Navigation",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 6_page_22_151",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-04-19T15:49:47+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-04-19T15:49:47+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 6.pdf",
+            "total_pages": 38,
+            "page": 22,
+            "page_label": "23"
+        },
+        "page_content": "AbsRel Mean relative error Sensitive to errors in nearby \nobjects \nRMSE Root mean squared error \n(meters) \nMeasures absolute depth \ndeviation \nRMSElog Log-scale RMSE Penalizes proportional errors \nSILog Scale-invariant log error Evaluates structural consistency \n\u03b41 % of predictions within 25% \nerror \nMeasures strict reliability",
+        "type": "Document"
+    }
+]

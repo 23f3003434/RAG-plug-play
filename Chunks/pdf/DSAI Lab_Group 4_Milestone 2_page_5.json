@@ -1,0 +1,82 @@
+[
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_5_19",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "P a g e  5 / 9  \n \n2.6.2. Key Advantages of the 3-Class Model \n\u2022 Leveraging High-Density Data (The \"Person\" Class): Safety is paramount \nwhen navigating around humans. By focusing on only 3 classes, we were \nable to leverage our largest data segment\u20144,000+ samples of the \n\"Person\" class. This massive sample size ensures that the model is \nexceptionally robust at detecting humans in various poses (sitting, \nstanding, walking) and lighting conditions, significantly reducing the risk of",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_5_20",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "collisions. \n\u2022 Enhanced Model Precision (Reduced Inter-Class Confusion): Deep \nlearning models often struggle to distinguish between visually similar \nobjects (e.g., a \"Cabinet\" vs. a \"Wardrobe\"). By merging these into a single \n\"Obstacle\" class, we eliminate \"label noise\" and inter-class confusion. This \nresults in higher Mean Average Precision (mAP) for the remaining \ncategories, as the model's \"mental energy\" is focused on only three distinct \nvisual patterns.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_5_21",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "visual patterns. \n \n\u2022 Significant Training & Inference Speedup: \no Training: With only 3 output neurons in the classification head \n(rather than 11), the model converges significantly faster, allowing for \nmore rapid iteration and hyperparameter tuning. \no Inference: Reducing the complexity of the classification task allows \nthe model to maintain higher frame rates (FPS) on edge devices, \nwhich is critical for providing low-latency audio feedback to a \nvisually impaired user.",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_5_22",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "visually impaired user. \n \n2.6.3. Strategic Assumption for Milestone 3 \nWe hypothesize that for the \"Action-Oriented\" goals of this project, the DSAI-\nUnified-Lite model will outperform the 11-class model in real-world \"Path Clear\" \nvs. \"Path Blocked\" scenarios. The simplicity of the output aligns perfectly with our \nDeterministic Navigation Logic, which primarily needs to know if a zone is \n\"Empty\" or \"Occupied. \" \n \n3. Depth Estimation Dataset Identification & Model Evaluation",
+        "type": "Document"
+    },
+    {
+        "id": "pdf_DSAI Lab_Group 4_Milestone 2_page_5_23",
+        "metadata": {
+            "producer": "Microsoft\u00ae Word 2019",
+            "creator": "Microsoft\u00ae Word 2019",
+            "creationdate": "2026-03-21T13:51:08+05:30",
+            "author": "Saransh Saini",
+            "moddate": "2026-03-21T13:51:08+05:30",
+            "source": "data/pdf/DSAI Lab_Group 4_Milestone 2.pdf",
+            "total_pages": 10,
+            "page": 5,
+            "page_label": "6"
+        },
+        "page_content": "3.1. Primary Dataset: NYU-Depth V2 \nFor the development of our depth perception module, the team has selected the \nNYU-Depth V2 dataset as our primary benchmark. This dataset consists of 1,449 \ndensely labeled pairs of aligned RGB and depth images across 464 distinct indoor \nscenes.",
+        "type": "Document"
+    }
+]
