@@ -2,7 +2,11 @@
 Plug and Play RAG backend only 
 """
 
-from application.data_fetch import process_files
+from application.data_processing import process_folders
 
-process_files('data')
+
+
+
+
+
 
